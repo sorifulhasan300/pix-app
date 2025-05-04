@@ -1,0 +1,7 @@
+import React from "react";
+
+const Navbar = () => {
+  return <div>Hi I am Navbar</div>;
+};
+
+export default Navbar;
