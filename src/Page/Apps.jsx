@@ -26,7 +26,6 @@ const Apps = () => {
     const healthCare = data.filter((app) => app.category == "Healthcare");
     setHealthCareApp(healthCare);
   }, [data]);
-  console.log(productivityApp);
 
   return (
     <div className="min-h-screen ">

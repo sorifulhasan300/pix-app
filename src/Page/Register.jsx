@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const Register = () => {
-  const { registerUser } = use(AuthContext);
+  const { registerUser, googleSignIn } = use(AuthContext);
   const navigate = useNavigate();
   const [error, setError] = useState("");
   const handleNavigate = () => {
@@ -43,8 +43,15 @@ const Register = () => {
         const errorCode = error.code;
         const errorMessage = error.message;
         console.log(errorMessage);
-
-        // ..
+      });
+  };
+  const handleGoogleSignIn = () => {
+    googleSignIn()
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((error) => {
+        console.log(error.message);
       });
   };
   return (
@@ -55,6 +62,7 @@ const Register = () => {
           {/* Full Name */}
           <label className="label">Full Name</label>
           <input
+            required
             type="text"
             name="name"
             className="input"
@@ -63,6 +71,7 @@ const Register = () => {
           {/* Image Url */}
           <label className="label">Image Url</label>
           <input
+            required
             type="text"
             name="image"
             className="input"
@@ -71,6 +80,7 @@ const Register = () => {
           {/* Email */}
           <label className="label">Email</label>
           <input
+            required
             name="email"
             type="email"
             className="input"
@@ -78,6 +88,7 @@ const Register = () => {
           />
           <label className="label">Password</label>
           <input
+            required
             name="password"
             type="password"
             className="input"
@@ -90,7 +101,10 @@ const Register = () => {
             Create an Account
           </button>
         </form>
-        <button className="btn bg-white text-black border-[#e5e5e5]">
+        <button
+          onClick={() => handleGoogleSignIn()}
+          className="btn bg-white text-black border-[#e5e5e5]"
+        >
           <svg
             aria-label="Google logo"
             width="16"

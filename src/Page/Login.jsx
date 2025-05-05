@@ -1,19 +1,59 @@
-import React from "react";
-import { useNavigate } from "react-router";
+import React, { use } from "react";
+import { useLocation, useNavigate } from "react-router";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const Login = () => {
   const navigate = useNavigate();
+  const { loginUser, googleSignIn } = use(AuthContext);
+  const location = useLocation();
+  console.log(location);
+
   const handleNavigate = () => {
     navigate("/auth/register");
+  };
+  const handleUserLogin = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    loginUser(email, password)
+      .then((result) =>
+        location.state ? navigate(location?.state) : navigate("/")
+      )
+      .catch((error) => {
+        console.log("InValid Email or Password");
+      });
+    console.log({ email, password });
+  };
+  const handleGoogleSignIn = () => {
+    googleSignIn()
+      .then((result) => {
+        console.log(result);
+        location.state ? navigate(location?.state) : navigate("/");
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
   };
   return (
     <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
       <div className="card-body">
-        <fieldset className="fieldset">
+        <form onSubmit={handleUserLogin} className="fieldset">
           <label className="label">Email</label>
-          <input type="email" className="input" placeholder="Email" />
+          <input
+            required
+            type="email"
+            name="email"
+            className="input"
+            placeholder="Email"
+          />
           <label className="label">Password</label>
-          <input type="password" className="input" placeholder="Password" />
+          <input
+            required
+            type="password"
+            name="password"
+            className="input"
+            placeholder="Password"
+          />
           <div>
             <a className="">
               new to PixApps?{" "}
@@ -25,9 +65,14 @@ const Login = () => {
               </button>
             </a>
           </div>
-          <button className="btn btn-neutral mt-4">Login</button>
-        </fieldset>
-        <button className="btn bg-white text-black border-[#e5e5e5]">
+          <button type="submit" className="btn btn-neutral mt-4">
+            Login
+          </button>
+        </form>
+        <button
+          onClick={handleGoogleSignIn}
+          className="btn bg-white text-black border-[#e5e5e5]"
+        >
           <svg
             aria-label="Google logo"
             width="16"

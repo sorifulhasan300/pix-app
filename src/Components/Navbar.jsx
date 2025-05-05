@@ -4,11 +4,20 @@ import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const { name } = use(AuthContext);
-  console.log(name);
+  const { user, logOut } = use(AuthContext);
+  console.log(user);
 
   const handleNavigate = () => {
     navigate("/auth/login");
+  };
+  const handleLogOut = () => {
+    logOut()
+      .then(() => {
+        console.log("log out successfully");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
   const link = (
     <div className="flex flex-col lg:flex-row gap-4">
@@ -65,9 +74,15 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{link}</ul>
         </div>
         <div className="navbar-end">
-          <button onClick={() => handleNavigate()} className="btn">
-            Log in
-          </button>
+          {user ? (
+            <button onClick={() => handleLogOut()} className="btn">
+              Log Out
+            </button>
+          ) : (
+            <button onClick={() => handleNavigate()} className="btn">
+              Log in
+            </button>
+          )}
           <h1>{name}</h1>
         </div>
       </div>

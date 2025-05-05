@@ -6,6 +6,7 @@ import Apps from "../Page/Apps";
 import AppDetails from "../Page/AppDetails";
 import Authentication from "../Page/Authentication";
 import Register from "../Page/Register";
+import ProtectedRoute from "../PrivateRoute/ProtectedRoute";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/appDetails/:id",
-        element: <AppDetails></AppDetails>,
+        element: (
+          <ProtectedRoute>
+            <AppDetails></AppDetails>
+          </ProtectedRoute>
+        ),
         loader: () => fetch("/data.json"),
       },
     ],
@@ -37,6 +42,10 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <h1>Error This page</h1>,
   },
 ]);
 
