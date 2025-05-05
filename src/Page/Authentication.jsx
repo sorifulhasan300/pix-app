@@ -3,13 +3,13 @@ import Navbar from "../Components/Navbar";
 import { Outlet } from "react-router";
 import Footer from "../Components/Footer";
 
-const Home = () => {
+const Authentication = () => {
   return (
     <div>
       <header>
         <Navbar></Navbar>
       </header>
-      <main className="w-11/12 mx-auto ">
+      <main className="w-11/12 place-items-center mx-auto  min-h-dvh flex justify-center">
         <Outlet></Outlet>
       </main>
       <footer>
@@ -19,4 +19,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Authentication;

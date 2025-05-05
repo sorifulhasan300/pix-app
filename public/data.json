@@ -1,0 +1,162 @@
+[
+  {
+    "id": "app010",
+    "name": "Moodle",
+    "developer": "BrightMind Inc.",
+    "thumbnail": "https://i.ibb.co.com/3mJcHwZc/image.png",
+    "banner": "https://i.ibb.co.com/tPq0xdzm/Blue-Modern-Investment-Mobile-App-Promotion-Facebook-Ad.jpg",
+    "downloads": 1800000,
+    "category": "Education",
+    "rating": 4.6,
+    "description": "StudyPal helps students organize study sessions and track academic progress with ease.",
+    "features": [
+      "Custom study schedules",
+      "Pomodoro timer",
+      "Progress tracker"
+    ],
+    "reviews": [
+      {
+        "user": "student_rakib",
+        "rating": 5,
+        "comment": "Super helpful for exam preparation! Clean interface."
+      }
+    ]
+  },
+  {
+    "id": "app011",
+    "name": "Daily Planner Pro",
+    "developer": "SmartTaskers Ltd.",
+    "thumbnail": "https://i.ibb.co.com/DPq2Gnmj/image.png",
+    "banner": "https://i.ibb.co.com/tMtsvbx9/Blue-Modern-Investment-Mobile-App-Promotion-Facebook-Ad-1.jpg",
+    "downloads": 3000000,
+    "category": "Productivity",
+    "rating": 4.5,
+    "description": "Boost productivity with a smart daily planner and reminder system designed for busy people.",
+    "features": ["Smart scheduling", "Recurring tasks", "Priority tagging"],
+    "reviews": [
+      {
+        "user": "focused_mehnaz",
+        "rating": 4,
+        "comment": "Good features, helps me stay organized!"
+      }
+    ]
+  },
+  {
+    "id": "app012",
+    "name": "Ayuda Health",
+    "developer": "CareTech Solutions",
+    "thumbnail": "https://i.ibb.co.com/m5km3s5t/image.png",
+    "banner": "https://i.ibb.co/DzVK4Kw/meditrack-banner.jpg",
+    "downloads": 2100000,
+    "category": "Healthcare",
+    "rating": 4.7,
+    "description": "Ayuda Health lets you monitor medication schedules and track your health vitals effectively.",
+    "features": ["Medicine reminders", "Health reports", "Doctor contact logs"],
+    "reviews": [
+      {
+        "user": "health_rubina",
+        "rating": 5,
+        "comment": "Saved me from missing doses. Great app!"
+      }
+    ]
+  },
+  {
+    "id": "app013",
+    "name": "Forest",
+    "developer": "ZenSoft Co.",
+    "thumbnail": "https://i.ibb.co.com/9k5RtK5Z/image.png",
+    "banner": "https://i.ibb.co/NsZbpD7/focusmate-banner.jpg",
+    "downloads": 1400000,
+    "category": "Productivity",
+    "rating": 4.3,
+    "description": "Stay focused and reduce distractions using scientifically backed focus sessions.",
+    "features": ["Distraction blocker", "Focus timer", "Ambient sounds"],
+    "reviews": [
+      {
+        "user": "no_distraction",
+        "rating": 4,
+        "comment": "Pomodoro with focus music is a game changer!"
+      }
+    ]
+  },
+  {
+    "id": "app014",
+    "name": "EduQuest",
+    "developer": "Quest Learning Hub",
+    "thumbnail": "https://i.ibb.co.com/spWLPkQV/image.png",
+    "banner": "https://i.ibb.co/ncL4zjZ/eduquest-banner.jpg",
+    "downloads": 2500000,
+    "category": "Education",
+    "rating": 4.8,
+    "description": "Learn school subjects through interactive quizzes and challenges with EduQuest.",
+    "features": [
+      "Subject-wise quizzes",
+      "Live competitions",
+      "Progress leaderboard"
+    ],
+    "reviews": [
+      {
+        "user": "quiz_khalid",
+        "rating": 5,
+        "comment": "Best app to make learning fun!"
+      }
+    ]
+  },
+  {
+    "id": "app015",
+    "name": "FitLog",
+    "developer": "ActiveWell Ltd.",
+    "thumbnail": "https://i.ibb.co.com/wrYQsZps/image.png",
+    "banner": "https://i.ibb.co/kQj9YX3/fitlog-banner.jpg",
+    "downloads": 2700000,
+    "category": "Healthcare",
+    "rating": 4.6,
+    "description": "FitLog helps you log workouts, track meals, and monitor your daily activity levels.",
+    "features": ["Workout tracker", "Water intake log", "Calorie calculator"],
+    "reviews": [
+      {
+        "user": "gym_sajib",
+        "rating": 4,
+        "comment": "Very motivating! Would love more diet options."
+      }
+    ]
+  },
+  {
+    "id": "app016",
+    "name": "Notedown",
+    "developer": "PaperBits Studio",
+    "thumbnail": "https://i.ibb.co.com/N2Jk96Jg/image.png",
+    "banner": "https://i.ibb.co/L8HpxFj/notedown-banner.jpg",
+    "downloads": 1900000,
+    "category": "Productivity",
+    "rating": 4.4,
+    "description": "A clean, minimal note-taking app perfect for quick thoughts, ideas, and tasks.",
+    "features": ["Rich text support", "Dark mode", "Sync across devices"],
+    "reviews": [
+      {
+        "user": "noted_rina",
+        "rating": 5,
+        "comment": "Simple and efficient. I use it daily!"
+      }
+    ]
+  },
+  {
+    "id": "app017",
+    "name": "HeartWatch",
+    "developer": "PulseCare Apps",
+    "thumbnail": "https://i.ibb.co.com/zTJ3KPBF/image.png",
+    "banner": "https://i.ibb.co/khzNLwv/heartwatch-banner.jpg",
+    "downloads": 2300000,
+    "category": "Healthcare",
+    "rating": 4.7,
+    "description": "Track your heart rate, blood pressure, and overall heart health with HeartWatch.",
+    "features": ["Heart rate monitor", "BP tracking", "Weekly health summary"],
+    "reviews": [
+      {
+        "user": "bp_checker",
+        "rating": 5,
+        "comment": "Highly accurate and easy to use!"
+      }
+    ]
+  }
+]
