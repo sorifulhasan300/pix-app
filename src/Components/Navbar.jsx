@@ -1,8 +1,12 @@
-import React from "react";
+import React, { use } from "react";
 import { NavLink, useNavigate } from "react-router";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const { name } = use(AuthContext);
+  console.log(name);
+
   const handleNavigate = () => {
     navigate("/auth/login");
   };
@@ -64,6 +68,7 @@ const Navbar = () => {
           <button onClick={() => handleNavigate()} className="btn">
             Log in
           </button>
+          <h1>{name}</h1>
         </div>
       </div>
     </div>

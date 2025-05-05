@@ -1,9 +1,12 @@
-import React from "react";
+import React, { use, useState } from "react";
 import { CiLogin } from "react-icons/ci";
 import { useNavigate } from "react-router";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const Register = () => {
+  const { registerUser } = use(AuthContext);
   const navigate = useNavigate();
+  const [error, setError] = useState("");
   const handleNavigate = () => {
     navigate("/auth/login");
   };
@@ -13,7 +16,36 @@ const Register = () => {
     const photoURL = e.target.image.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log({ name, photoURL, email, password });
+    console.log(error);
+    if (password.length < 6) {
+      return setError("password length must 6 character");
+    } else {
+      setError("");
+    }
+    if (!/[a-z]/.test(password)) {
+      return setError("Must have at least one lowercase letter");
+    } else {
+      setError("");
+    }
+    if (!/[A-Z]/.test(password)) {
+      return setError("Must have at least one uppercase letter");
+    } else {
+      setError("");
+    }
+
+    registerUser(email, password)
+      .then((userCredential) => {
+        // Signed up
+        const user = userCredential.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorMessage);
+
+        // ..
+      });
   };
   return (
     <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
