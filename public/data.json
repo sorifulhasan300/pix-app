@@ -3,7 +3,7 @@
     "id": "app010",
     "name": "Moodle",
     "developer": "BrightMind Inc.",
-    "thumbnail": "https://i.ibb.co.com/3mJcHwZc/image.png",
+    "thumbnail": "https://i.ibb.co.com/fY1ydgrk/Pngtree-download-logo-apps-collection-6729571.png",
     "banner": "https://i.ibb.co.com/tPq0xdzm/Blue-Modern-Investment-Mobile-App-Promotion-Facebook-Ad.jpg",
     "downloads": 1800000,
     "category": "Education",
@@ -166,5 +166,255 @@
         "comment": "Highly accurate and easy to use!"
       }
     ]
-  }
+  },
+  
+    {
+      "id": "app018",
+      "name": "Moodle",
+      "developer": "BrightMind Inc.",
+      "thumbnail": "https://i.ibb.co.com/zTJ3KPBF/image.png",
+      "banner": "https://i.ibb.co.com/tPq0xdzm/Blue-Modern-Investment-Mobile-App-Promotion-Facebook-Ad.jpg",
+      "downloads": 1800000,
+      "category": "Education",
+      "rating": 4.6,
+      "status": "true",
+      "description": "StudyPal helps students organize study sessions and track academic progress with ease.",
+      "features": [
+        "Custom study schedules",
+        "Pomodoro timer",
+        "Progress tracker"
+      ],
+      "reviews": [
+        {
+          "user": "student_rakib",
+          "rating": 5,
+          "comment": "Super helpful for exam preparation! Clean interface."
+        }
+      ]
+    },
+    {
+      "id": "app019",
+      "name": "Khan Academy",
+      "developer": "Khan Labs",
+      "thumbnail": "https://i.ibb.co.com/zTJ3KPBF/image.png",
+      "banner": "https://i.ibb.co.com/khan-banner.jpg",
+      "downloads": 5000000,
+      "category": "Education",
+      "rating": 4.8,
+      "status": "true",
+      "description": "Learn anything for free with interactive video lessons.",
+      "features": ["Video lectures", "Practice quizzes", "Progress dashboard"],
+      "reviews": [
+        {
+          "user": "learn_jenny",
+          "rating": 5,
+          "comment": "Best free learning resource online!"
+        }
+      ]
+    },
+    {
+      "id": "app020",
+      "name": "Quizlet",
+      "developer": "Quizlet Inc.",
+      "thumbnail": "https://i.ibb.co.com/quizlet.png",
+      "banner": "https://i.ibb.co.com/quizlet-banner.jpg",
+      "downloads": 3200000,
+      "category": "Education",
+      "rating": 4.5,
+      "status": "true",
+      "description": "Create flashcards and study smarter with Quizlet.",
+      "features": ["Flashcards", "Test mode", "Games for learning"],
+      "reviews": [
+        {
+          "user": "user_alpha",
+          "rating": 4,
+          "comment": "Useful for quick revision."
+        }
+      ]
+    },
+    {
+      "id": "app021",
+      "name": "Duolingo",
+      "developer": "Duolingo Inc.",
+      "thumbnail": "https://i.ibb.co.com/duolingo.png",
+      "banner": "https://i.ibb.co.com/duolingo-banner.jpg",
+      "downloads": 10000000,
+      "category": "Education",
+      "rating": 4.7,
+      "status": "true",
+      "description": "Learn new languages in a fun, gamified way.",
+      "features": ["Daily lessons", "Streak tracker", "Gamified quizzes"],
+      "reviews": [
+        {
+          "user": "polyglot_tina",
+          "rating": 5,
+          "comment": "Learning French has never been this fun!"
+        }
+      ]
+    },
+    {
+      "id": "app022",
+      "name": "FitTrack",
+      "developer": "WellnessX",
+      "thumbnail": "https://i.ibb.co.com/fittrack.png",
+      "banner": "https://i.ibb.co.com/fittrack-banner.jpg",
+      "downloads": 2200000,
+      "category": "Health",
+      "rating": 4.3,
+      "status": "true",
+      "description": "Monitor your fitness goals with real-time analytics.",
+      "features": ["Step counter", "Calorie tracker", "Workout planner"],
+      "reviews": [
+        {
+          "user": "fit_guy",
+          "rating": 4,
+          "comment": "Accurate step tracking and intuitive UI."
+        }
+      ]
+    },
+    {
+      "id": "app023",
+      "name": "MyFitnessPal",
+      "developer": "Under Armour",
+      "thumbnail": "https://i.ibb.co.com/mfp.png",
+      "banner": "https://i.ibb.co.com/mfp-banner.jpg",
+      "downloads": 8000000,
+      "category": "Health",
+      "rating": 4.6,
+      "status": "true",
+      "description": "Track diet and exercise to reach your health goals.",
+      "features": ["Food diary", "Macro tracking", "Community support"],
+      "reviews": [
+        {
+          "user": "healthqueen",
+          "rating": 5,
+          "comment": "Helped me lose weight efficiently!"
+        }
+      ]
+    },
+    {
+      "id": "app024",
+      "name": "Headspace",
+      "developer": "Headspace Inc.",
+      "thumbnail": "https://i.ibb.co.com/headspace.png",
+      "banner": "https://i.ibb.co.com/headspace-banner.jpg",
+      "downloads": 6000000,
+      "category": "Health",
+      "rating": 4.8,
+      "status": "true",
+      "description": "Meditation and sleep support for a healthier mind.",
+      "features": [
+        "Guided meditations",
+        "Sleep sounds",
+        "Mindfulness tracking"
+      ],
+      "reviews": [
+        {
+          "user": "zen_master",
+          "rating": 5,
+          "comment": "Calms my anxiety and improves sleep."
+        }
+      ]
+    },
+    {
+      "id": "app025",
+      "name": "WaterMinder",
+      "developer": "Funn Media",
+      "thumbnail": "https://i.ibb.co.com/waterminder.png",
+      "banner": "https://i.ibb.co.com/waterminder-banner.jpg",
+      "downloads": 1500000,
+      "category": "Health",
+      "rating": 4.4,
+      "status": "true",
+      "description": "Stay hydrated with smart water intake reminders.",
+      "features": ["Hydration tracking", "Custom goals", "Daily reminders"],
+      "reviews": [
+        {
+          "user": "hydrated_daisy",
+          "rating": 4,
+          "comment": "Simple and effective hydration tracker."
+        }
+      ]
+    },
+    {
+      "id": "app026",
+      "name": "Trello",
+      "developer": "Atlassian",
+      "thumbnail": "https://i.ibb.co.com/trello.png",
+      "banner": "https://i.ibb.co.com/trello-banner.jpg",
+      "downloads": 7000000,
+      "category": "Productivity",
+      "rating": 4.5,
+      "status": "true",
+      "description": "Organize your work and tasks with boards and cards.",
+      "features": ["Kanban boards", "Task labels", "Collaboration tools"],
+      "reviews": [
+        {
+          "user": "project_jane",
+          "rating": 5,
+          "comment": "Great for team task management!"
+        }
+      ]
+    },
+    {
+      "id": "app027",
+      "name": "Notion",
+      "developer": "Notion Labs",
+      "thumbnail": "https://i.ibb.co.com/notion.png",
+      "banner": "https://i.ibb.co.com/notion-banner.jpg",
+      "downloads": 6500000,
+      "category": "Productivity",
+      "rating": 4.7,
+      "status": "true",
+      "description": "All-in-one workspace for notes, tasks, and databases.",
+      "features": ["Custom templates", "Database views", "Note taking"],
+      "reviews": [
+        {
+          "user": "notion_ninja",
+          "rating": 5,
+          "comment": "Replaced half my productivity apps."
+        }
+      ]
+    },
+    {
+      "id": "app028",
+      "name": "Todoist",
+      "developer": "Doist",
+      "thumbnail": "https://i.ibb.co.com/todoist.png",
+      "banner": "https://i.ibb.co.com/todoist-banner.jpg",
+      "downloads": 4000000,
+      "category": "Productivity",
+      "rating": 4.6,
+      "status": "true",
+      "description": "Track your tasks and to-dos with ease.",
+      "features": ["Recurring tasks", "Priority levels", "Reminders"],
+      "reviews": [
+        {
+          "user": "taskmaster",
+          "rating": 5,
+          "comment": "Perfect for daily task planning!"
+        }
+      ]
+    },
+    {
+      "id": "app029",
+      "name": "Google Keep",
+      "developer": "Google LLC",
+      "thumbnail": "https://i.ibb.co.com/keep.png",
+      "banner": "https://i.ibb.co.com/keep-banner.jpg",
+      "downloads": 9000000,
+      "category": "Education",
+      "rating": 4.4,
+      "status": "true",
+      "description": "Quick notes, lists, and reminders — synced everywhere.",
+      "features": ["Color-coded notes", "Voice memos", "Cross-device sync"],
+      "reviews": [
+        {
+          "user": "notegeek",
+          "rating": 4,
+          "comment": "Minimal, fast, and syncs perfectly."
+        }
+      ]
+    }
+  
 ]

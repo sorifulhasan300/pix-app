@@ -8,6 +8,8 @@ const Apps = () => {
   const [healthCareApp, setHealthCareApp] = useState([]);
   const [educationalApp, setEducationalApp] = useState([]);
   const data = useLoaderData();
+  console.log(data);
+  
   //
   useEffect(() => {
     //trending app
@@ -17,6 +19,7 @@ const Apps = () => {
     //Education category app
     const educational = data.filter((app) => app.category == "Education");
     setEducationalApp(educational);
+    console.log(educational);
 
     //productivity category app
     const productivity = data.filter((app) => app.category == "Productivity");
@@ -28,11 +31,11 @@ const Apps = () => {
   }, [data]);
 
   return (
-    <div className="min-h-screen">
+    <div className="">
       {/* treanding apps */}
-      <div className="mt-20 cursor-pointer">
-        <h1 className="font-bold text-2xl text-center mb-20">Trending Apps</h1>
-        <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 place-items-center">
+      <div className=" cursor-pointer">
+        <h1 className="font-bold text-2xl  mb-20">Trending Apps</h1>
+        <div className="  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:grid-cols-4 gap-4 place-items-center">
           {trendingApp.map((app, index) => (
             <CategoryCard key={index} app={app}></CategoryCard>
           ))}
@@ -40,9 +43,7 @@ const Apps = () => {
       </div>
       {/* prodactivity apps */}
       <div className="mt-20 cursor-pointer">
-        <h1 className="font-bold text-2xl text-center mb-20">
-          Productivity Apps
-        </h1>
+        <h1 className="font-bold text-2xl  mb-20">Productivity Apps</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 place-items-center">
           {productivityApp.map((app, index) => (
             <CategoryCard key={index} app={app}></CategoryCard>
@@ -51,9 +52,7 @@ const Apps = () => {
       </div>
       {/* Health care app */}
       <div className="mt-20 cursor-pointer">
-        <h1 className="font-bold text-2xl text-center mb-20">
-          Health care Apps
-        </h1>
+        <h1 className="font-bold text-2xl  mb-20">Health care Apps</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 place-items-center">
           {healthCareApp.map((app, index) => (
             <CategoryCard key={index} app={app}></CategoryCard>
@@ -62,9 +61,7 @@ const Apps = () => {
       </div>
       {/* Edu cation app */}
       <div className="mt-20 cursor-pointer">
-        <h1 className="font-bold text-2xl text-center mb-20">
-          Educational Apps
-        </h1>
+        <h1 className="font-bold text-2xl  mb-20">Educational Apps</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 place-items-center">
           {educationalApp.map((app, index) => (
             <CategoryCard key={index} app={app}></CategoryCard>

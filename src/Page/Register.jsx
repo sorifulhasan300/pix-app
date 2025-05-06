@@ -4,7 +4,8 @@ import { useNavigate } from "react-router";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const Register = () => {
-  const { registerUser, googleSignIn } = use(AuthContext);
+  const { registerUser, googleSignIn, user, setUser, updateUserProfile } =
+    use(AuthContext);
   const navigate = useNavigate();
   const [error, setError] = useState("");
   const handleNavigate = () => {
@@ -36,6 +37,15 @@ const Register = () => {
     registerUser(email, password)
       .then((userCredential) => {
         // Signed up
+        updateUserProfile({ displayName: name, photoURL: photoURL })
+          .then(() => {
+            setUser({ ...user, displayName: name, photoURL: photoURL });
+            navigate("/");
+          })
+          .catch((error) => {
+            setUser(user);
+            navigate("/");
+          });
         const user = userCredential.user;
         console.log(user);
       })
