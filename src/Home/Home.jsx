@@ -9,8 +9,10 @@ const Home = () => {
       <header>
         <Navbar></Navbar>
       </header>
-      <main className="w-11/12 mx-auto ">
-        <Outlet></Outlet>
+      <main className="">
+        <div className="w-11/12 mx-auto">
+          <Outlet></Outlet>
+        </div>
       </main>
       <footer>
         <Footer></Footer>

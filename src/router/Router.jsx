@@ -8,6 +8,8 @@ import Authentication from "../Page/Authentication";
 import Register from "../Page/Register";
 import ProtectedRoute from "../PrivateRoute/ProtectedRoute";
 import MyProfile from "../Page/MyProfile";
+import Error from "../ErrorPage/Error";
+
 
 const router = createBrowserRouter([
   {
@@ -20,7 +22,7 @@ const router = createBrowserRouter([
         loader: () => fetch("/data.json"),
       },
       {
-        index: "/my-profile",
+        path: "/profile",
         element: <MyProfile></MyProfile>,
       },
       {
@@ -50,7 +52,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <h1>Error This page</h1>,
+    element: <Error></Error>,
   },
 ]);
 

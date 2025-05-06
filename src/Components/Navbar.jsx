@@ -4,8 +4,7 @@ import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const { user, logOut } = use(AuthContext);
-  console.log(user);
+  const { user, logOut, loading } = use(AuthContext);
 
   const handleNavigate = () => {
     navigate("/auth/login");
@@ -28,7 +27,7 @@ const Navbar = () => {
         Apps
       </NavLink>
       <NavLink
-        to={"/my-profile"}
+        to={"/profile"}
         className={({ isActive }) => (isActive ? "font-bold underline" : "")}
       >
         My Profile
@@ -85,24 +84,49 @@ const Navbar = () => {
 
         <div className="navbar-end flex gap-4">
           <div className="relative group inline-block cursor-pointer">
-            <div className="avatar w-10 block hover:hidden">
-              <div className="ring-primary ring-offset-base-100 w-10 rounded-full ring-2 ring-offset-2">
-                <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
-              </div>
+            <div className="block hover:hidden">
+              {loading ? (
+                <span className="loading loading-ring loading-xl"></span>
+              ) : (
+                <div className="">
+                  {user ? (
+                    <img
+                      className="rounded-full"
+                      width="48"
+                      height="48"
+                      src={user.photoURL}
+                      alt="photo"
+                    />
+                  ) : (
+                    <img
+                      width="48"
+                      height="48"
+                      src="https://img.icons8.com/color/48/user-male-circle--v1.png"
+                      alt="user-male-circle--v1"
+                    />
+                  )}
+                </div>
+              )}
             </div>
             <h1 className="absolute left-1/2 -translate-x-1/2 top-full  text-center text-sm rounded shadow hidden group-hover:block">
               Soriful hasan
             </h1>
           </div>
 
-          {user ? (
-            <button onClick={() => handleLogOut()} className="btn">
-              Log Out
-            </button>
+          {loading ? (
+            <span className="loading loading-ring loading-xl"></span>
           ) : (
-            <button onClick={() => handleNavigate()} className="btn">
-              Log in
-            </button>
+            <div>
+              {user ? (
+                <button onClick={() => handleLogOut()} className="btn">
+                  Log Out
+                </button>
+              ) : (
+                <button onClick={() => handleNavigate()} className="btn">
+                  Log in
+                </button>
+              )}
+            </div>
           )}
           <h1>{name}</h1>
         </div>
