@@ -28,7 +28,7 @@ const Apps = () => {
   }, [data]);
 
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen">
       {/* treanding apps */}
       <div className="mt-20 cursor-pointer">
         <h1 className="font-bold text-2xl text-center mb-20">Trending Apps</h1>

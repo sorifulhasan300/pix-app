@@ -8,6 +8,7 @@
     "downloads": 1800000,
     "category": "Education",
     "rating": 4.6,
+    "status": "true",
     "description": "StudyPal helps students organize study sessions and track academic progress with ease.",
     "features": [
       "Custom study schedules",
@@ -31,6 +32,7 @@
     "downloads": 3000000,
     "category": "Productivity",
     "rating": 4.5,
+    "status": "true",
     "description": "Boost productivity with a smart daily planner and reminder system designed for busy people.",
     "features": ["Smart scheduling", "Recurring tasks", "Priority tagging"],
     "reviews": [
@@ -50,6 +52,7 @@
     "downloads": 2100000,
     "category": "Healthcare",
     "rating": 4.7,
+    "status": "false",
     "description": "Ayuda Health lets you monitor medication schedules and track your health vitals effectively.",
     "features": ["Medicine reminders", "Health reports", "Doctor contact logs"],
     "reviews": [
@@ -69,6 +72,7 @@
     "downloads": 1400000,
     "category": "Productivity",
     "rating": 4.3,
+    "status": "true",
     "description": "Stay focused and reduce distractions using scientifically backed focus sessions.",
     "features": ["Distraction blocker", "Focus timer", "Ambient sounds"],
     "reviews": [
@@ -88,6 +92,7 @@
     "downloads": 2500000,
     "category": "Education",
     "rating": 4.8,
+    "status": "false",
     "description": "Learn school subjects through interactive quizzes and challenges with EduQuest.",
     "features": [
       "Subject-wise quizzes",
@@ -111,6 +116,7 @@
     "downloads": 2700000,
     "category": "Healthcare",
     "rating": 4.6,
+    "status": "false",
     "description": "FitLog helps you log workouts, track meals, and monitor your daily activity levels.",
     "features": ["Workout tracker", "Water intake log", "Calorie calculator"],
     "reviews": [
@@ -130,6 +136,7 @@
     "downloads": 1900000,
     "category": "Productivity",
     "rating": 4.4,
+    "status": "false",
     "description": "A clean, minimal note-taking app perfect for quick thoughts, ideas, and tasks.",
     "features": ["Rich text support", "Dark mode", "Sync across devices"],
     "reviews": [
@@ -149,6 +156,7 @@
     "downloads": 2300000,
     "category": "Healthcare",
     "rating": 4.7,
+    "status": "true",
     "description": "Track your heart rate, blood pressure, and overall heart health with HeartWatch.",
     "features": ["Heart rate monitor", "BP tracking", "Weekly health summary"],
     "reviews": [

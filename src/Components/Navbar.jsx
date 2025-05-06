@@ -23,11 +23,14 @@ const Navbar = () => {
     <div className="flex flex-col lg:flex-row gap-4">
       <NavLink
         to={"/"}
-        className={({ isActive }) => (isActive ? "bg-red-500" : "")}
+        className={({ isActive }) => (isActive ? "font-bold underline" : "")}
       >
         Apps
       </NavLink>
-      <NavLink className={({ isActive }) => (isActive ? "" : "")}>
+      <NavLink
+        to={"/my-profile"}
+        className={({ isActive }) => (isActive ? "font-bold underline" : "")}
+      >
         My Profile
       </NavLink>
       <NavLink className={({ isActive }) => (isActive ? "" : "")}>blog</NavLink>
@@ -63,17 +66,35 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="logo-title flex gap-1 items-center hidden lg:block">
-            <a className="text-[#3752FD] text-4xl font-bold">P</a>
-            <a className="text-xl ">
-              Pix
-              <span className="font-bold">Apps</span>
-            </a>
+            <div className="flex gap-2">
+              <img
+                src="https://flowbite.com/docs/images/logo.svg"
+                class="h-8"
+                alt="Flowbite Logo"
+              />
+              <a className="text-xl ">
+                Pix
+                <span className="font-bold">Apps</span>
+              </a>
+            </div>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{link}</ul>
         </div>
-        <div className="navbar-end">
+
+        <div className="navbar-end flex gap-4">
+          <div className="relative group inline-block cursor-pointer">
+            <div className="avatar w-10 block hover:hidden">
+              <div className="ring-primary ring-offset-base-100 w-10 rounded-full ring-2 ring-offset-2">
+                <img src="https://img.daisyui.com/images/profile/demo/spiderperson@192.webp" />
+              </div>
+            </div>
+            <h1 className="absolute left-1/2 -translate-x-1/2 top-full  text-center text-sm rounded shadow hidden group-hover:block">
+              Soriful hasan
+            </h1>
+          </div>
+
           {user ? (
             <button onClick={() => handleLogOut()} className="btn">
               Log Out

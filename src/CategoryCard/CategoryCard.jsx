@@ -10,8 +10,7 @@ const CategoryCard = ({ app }) => {
 
   return (
     <div onClick={() => handleNavigate()}>
-      {" "}
-      <div className="flex gap-2 shadow-sm  p-4  border">
+      <div className="flex  gap-2 shadow-sm  p-4  border">
         <img width={60} height={10} src={thumbnail} alt="" />
         <div>
           <h1>{name}</h1>
