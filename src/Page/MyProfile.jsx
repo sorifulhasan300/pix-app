@@ -20,7 +20,7 @@ const MyProfile = () => {
   };
   return (
     <div>
-      <div className=" w-8/12  flex items-center justify-center mx-auto h-screen">
+      <div className="  w-8/12  flex items-center justify-center mx-auto h-screen">
         <div className="place-items-center w-4xl h-150 shadow py-4">
           <div className="avatar ">
             {loading ? (

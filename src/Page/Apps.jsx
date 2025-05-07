@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router";
 import CategoryCard from "../CategoryCard/CategoryCard";
+import Slider from "../Components/Slider";
+import { FaFire } from "react-icons/fa";
+import ArticalCard from "../Artical/ArticalCard";
+import FindApk from "../Components/FindApk";
 
 const Apps = () => {
   const [trendingApp, setTrendingApp] = useState([]);
@@ -8,18 +12,19 @@ const Apps = () => {
   const [healthCareApp, setHealthCareApp] = useState([]);
   const [educationalApp, setEducationalApp] = useState([]);
   const data = useLoaderData();
-  console.log(data);
-  
+
   //
   useEffect(() => {
     //trending app
-    const trendingApp = data.filter((app) => app.rating > "4.5");
+    const trendingApp = data
+      .filter((app) => app.rating > 4.5)
+      .sort((a, b) => b.rating - a.rating)
+      .slice(0, 6);
     setTrendingApp(trendingApp);
 
     //Education category app
     const educational = data.filter((app) => app.category == "Education");
     setEducationalApp(educational);
-    console.log(educational);
 
     //productivity category app
     const productivity = data.filter((app) => app.category == "Productivity");
@@ -32,19 +37,29 @@ const Apps = () => {
 
   return (
     <div className="">
+      <div className="">
+        <Slider></Slider>
+      </div>
       {/* treanding apps */}
-      <div className=" cursor-pointer">
-        <h1 className="font-bold text-2xl  mb-20">Trending Apps</h1>
-        <div className="  grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:grid-cols-4 gap-4 place-items-center">
+      <div className=" cursor-pointer bg-white p-4 mt-4">
+        <div className="w-10/12 mx-auto">
+          <div className="flex items-center gap-2">
+            <FaFire color="#FC6400"></FaFire>
+            <h1 className="font-bold text-xl ">Trending Apps</h1>
+          </div>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4    place-items-center">
           {trendingApp.map((app, index) => (
             <CategoryCard key={index} app={app}></CategoryCard>
           ))}
         </div>
       </div>
       {/* prodactivity apps */}
-      <div className="mt-20 cursor-pointer">
-        <h1 className="font-bold text-2xl  mb-20">Productivity Apps</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 place-items-center">
+      <div className="cursor-pointer bg-white p-4 mt-4">
+        <div className="w-10/12 mx-auto mb-4">
+          <h1 className="font-bold text-xl ">Productivity</h1>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4    place-items-center">
           {productivityApp.map((app, index) => (
             <CategoryCard key={index} app={app}></CategoryCard>
           ))}
@@ -52,8 +67,10 @@ const Apps = () => {
       </div>
       {/* Health care app */}
       <div className="mt-20 cursor-pointer">
-        <h1 className="font-bold text-2xl  mb-20">Health care Apps</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 place-items-center">
+        <div className="w-10/12 mx-auto mb-4">
+          <h1 className="font-bold text-xl ">Health care</h1>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4   place-items-center">
           {healthCareApp.map((app, index) => (
             <CategoryCard key={index} app={app}></CategoryCard>
           ))}
@@ -61,12 +78,21 @@ const Apps = () => {
       </div>
       {/* Edu cation app */}
       <div className="mt-20 cursor-pointer">
-        <h1 className="font-bold text-2xl  mb-20">Educational Apps</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 place-items-center">
+        <div className="w-10/12 mx-auto mb-4">
+          <h1 className="font-bold text-xl ">Educational</h1>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4   place-items-center">
           {educationalApp.map((app, index) => (
             <CategoryCard key={index} app={app}></CategoryCard>
           ))}
         </div>
+      </div>
+      <div className="w-10/12 mx-auto mt-8">
+        <h1 className="font-bold text-xl ">
+          Popular Articles In Last 24 Hours
+        </h1>
+        <ArticalCard></ArticalCard>
+        <FindApk></FindApk>
       </div>
     </div>
   );

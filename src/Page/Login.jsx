@@ -7,6 +7,7 @@ const Login = () => {
   const { loginUser, googleSignIn } = use(AuthContext);
   const location = useLocation();
   console.log(location);
+   
 
   const handleNavigate = () => {
     navigate("/auth/register");
@@ -54,16 +55,9 @@ const Login = () => {
             className="input"
             placeholder="Password"
           />
+
           <div>
-            <a className="">
-              new to PixApps?{" "}
-              <button
-                onClick={() => handleNavigate()}
-                className="link link-hover font-bold"
-              >
-                register
-              </button>
-            </a>
+            <a className="link link-hover">Forgot password?</a>
           </div>
           <button type="submit" className="btn btn-neutral mt-4">
             Login
@@ -102,6 +96,17 @@ const Login = () => {
           </svg>
           Login with Google
         </button>
+        <div>
+          <a className="">
+            new to PixApps?{" "}
+            <button
+              onClick={() => handleNavigate()}
+              className="link link-hover under-liner"
+            >
+              register
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );

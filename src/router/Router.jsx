@@ -9,7 +9,7 @@ import Register from "../Page/Register";
 import ProtectedRoute from "../PrivateRoute/ProtectedRoute";
 import MyProfile from "../Page/MyProfile";
 import Error from "../ErrorPage/Error";
-
+import Artical from "../Artical/Artical";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +33,10 @@ const router = createBrowserRouter([
           </ProtectedRoute>
         ),
         loader: () => fetch("/data.json"),
+      },
+      {
+        path: "/articles",
+        element: <Artical></Artical>,
       },
     ],
   },

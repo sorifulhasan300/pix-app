@@ -142,7 +142,7 @@ const Register = () => {
               ></path>
             </g>
           </svg>
-          Login with Google
+          Register with Google
         </button>
         <div className="flex place-items-center ">
           <a className="mr-4">Already have an account?</a>

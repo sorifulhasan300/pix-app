@@ -19,20 +19,37 @@ const Navbar = () => {
       });
   };
   const link = (
-    <div className="flex flex-col lg:flex-row gap-4">
+    <div className="flex flex-col lg:flex-row gap-12">
       <NavLink
         to={"/"}
-        className={({ isActive }) => (isActive ? "font-bold underline" : "")}
+        className={({ isActive }) =>
+          isActive
+            ? "font-bold underline  underline-offset-6   text-[#1276F7] underline-[#1276F7]  "
+            : "font-bold"
+        }
       >
         Apps
       </NavLink>
       <NavLink
         to={"/profile"}
-        className={({ isActive }) => (isActive ? "font-bold underline" : "")}
+        className={({ isActive }) =>
+          isActive
+            ? "font-bold underline  underline-offset-6   text-[#1276F7] underline-[#1276F7]"
+            : "font-bold"
+        }
       >
         My Profile
       </NavLink>
-      <NavLink className={({ isActive }) => (isActive ? "" : "")}>blog</NavLink>
+      <NavLink
+        to={"/articles"}
+        className={({ isActive }) =>
+          isActive
+            ? "font-bold underline  underline-offset-6   text-[#1276F7] underline-[#1276F7]"
+            : ""
+        }
+      >
+        Articles
+      </NavLink>
     </div>
   );
   return (
@@ -73,7 +90,7 @@ const Navbar = () => {
               />
               <a className="text-xl ">
                 Pix
-                <span className="font-bold">Apps</span>
+                <span className="font-bold text-[#1276F7]">Apps</span>
               </a>
             </div>
           </div>
@@ -83,34 +100,24 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end flex gap-4">
-          <div className="relative group inline-block cursor-pointer">
-            <div className="block hover:hidden">
-              {loading ? (
-                <span className="loading loading-ring loading-xl"></span>
-              ) : (
-                <div className="">
-                  {user ? (
-                    <img
-                      className="rounded-full"
-                      width="48"
-                      height="48"
-                      src={user.photoURL}
-                      alt="photo"
-                    />
-                  ) : (
-                    <img
-                      width="48"
-                      height="48"
-                      src="https://img.icons8.com/color/48/user-male-circle--v1.png"
-                      alt="user-male-circle--v1"
-                    />
-                  )}
-                </div>
-              )}
-            </div>
-            <h1 className="absolute left-1/2 -translate-x-1/2 top-full  text-center text-sm rounded shadow hidden group-hover:block">
-              Soriful hasan
-            </h1>
+          <div class="tooltip tooltip-bottom" data-tip={user?.displayName}>
+            {loading ? (
+              <span className="loading loading-ring loading-xl"></span>
+            ) : (
+              <div className="">
+                {user ? (
+                  <img
+                    className="rounded-full"
+                    width="48"
+                    height="48"
+                    src={user?.photoURL}
+                    alt="photo"
+                  />
+                ) : (
+                  <img src="" alt="" />
+                )}
+              </div>
+            )}
           </div>
 
           {loading ? (
@@ -118,11 +125,17 @@ const Navbar = () => {
           ) : (
             <div>
               {user ? (
-                <button onClick={() => handleLogOut()} className="btn">
+                <button
+                  onClick={() => handleLogOut()}
+                  className="btn bg-[#1276F7] text-white"
+                >
                   Log Out
                 </button>
               ) : (
-                <button onClick={() => handleNavigate()} className="btn">
+                <button
+                  onClick={() => handleNavigate()}
+                  className="btn text-white bg-[#1276F7]"
+                >
                   Log in
                 </button>
               )}

@@ -10,9 +10,6 @@ const Error = () => {
   };
   return (
     <div>
-      <header>
-        <Navbar></Navbar>
-      </header>
       <main className="min-h-screen dark:bg-gray-50">
         <section className="flex items-center h-full p-16 dark:bg-gray-50 dark:text-gray-800">
           <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">
@@ -39,9 +36,6 @@ const Error = () => {
           </div>
         </section>
       </main>
-      <footer>
-        <Footer></Footer>
-      </footer>
     </div>
   );
 };
