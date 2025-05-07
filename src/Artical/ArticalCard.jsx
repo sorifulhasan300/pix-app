@@ -13,7 +13,7 @@ const ArticalCard = () => {
   }, []);
 
   return (
-    <div className="cursor-pointer grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-4 mt-4">
+    <div className="cursor-pointer items-center place-items-center xl:place-items-start grid grid-cols-1  lg:grid-cols-2 xl:grid-cols-3  gap-4 mt-4">
       {items.map((art) => {
         return <SingleArticle art={art}></SingleArticle>;
       })}

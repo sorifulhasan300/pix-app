@@ -35,29 +35,27 @@ const AppDetails = () => {
     e.preventDefault();
     const review = e.target.review.value;
     setUserReview([...userReview, review]);
-    
   };
 
   const handleUserState = () => {
     setUserState(true);
-   
   };
 
   return (
     <div className="w-11/12 mx-auto ">
       <div
-        className="w-full h-[500px] rounded-xl bg-cover bg-center"
+        className="w-full h-[200px] lg:h-[500px] rounded-xl bg-cover bg-center"
         style={{ backgroundImage: `url(${banner})` }}
       ></div>
       <div className=" p-10 mt-4">
         <div className="space-y-4">
-          <div className="items-center space-y-1.5">
+          <div className="items-center space-y-1.5 text-center md:text-start">
             <h1 className="font-bold text-2xl">{name}</h1>
             <h1 className="text-[#131313]"> {developer}</h1>
           </div>
 
-          <div className="flex items-center gap-4  justify-between">
-            <div className="flex items-center gap-4">
+          <div className="flex flex-col md:flex-row items-center gap-4  justify-between">
+            <div className="flex flex-col md:flex-row items-center gap-4">
               <div className="shadow p-2 rounded">
                 <img width={60} className="rounded " src={thumbnail} alt="" />
               </div>

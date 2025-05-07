@@ -92,7 +92,6 @@ const Apps = () => {
           Popular Articles In Last 24 Hours
         </h1>
         <ArticalCard></ArticalCard>
-        <FindApk></FindApk>
       </div>
     </div>
   );
