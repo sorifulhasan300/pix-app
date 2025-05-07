@@ -16,7 +16,7 @@ const AuthProvider = ({ children }) => {
   const auth = getAuth(app);
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  console.log(user);
+  
   const name = "soriful hasan";
   const provider = new GoogleAuthProvider();
 
@@ -37,7 +37,7 @@ const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
   const updateUserProfile = (updateInfo) => {
-    console.log(updateInfo);
+ 
     return updateProfile(auth.currentUser, updateInfo);
   };
 

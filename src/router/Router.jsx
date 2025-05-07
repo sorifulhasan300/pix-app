@@ -10,6 +10,7 @@ import ProtectedRoute from "../PrivateRoute/ProtectedRoute";
 import MyProfile from "../Page/MyProfile";
 import Error from "../ErrorPage/Error";
 import Artical from "../Artical/Artical";
+import Loader from "../Components/Loader";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
           </ProtectedRoute>
         ),
         loader: () => fetch("/data.json"),
+        hydrateFallbackElement: <Loader></Loader>,
       },
       {
         path: "/articles",

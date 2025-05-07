@@ -14,13 +14,15 @@ const Artical = () => {
         the step-by-step tutorial to download Dream League Soccer 2025 apk for
         Android.
       </p>
-      <div className="mt-4">
+      <div className="mt-4 text-gray-500 text-sm">
         <p>By Robert L. Rivera</p>
         <p>2025-05-07</p>
       </div>
       <div
         className="mt-4 mb-4 w-full h-[500px] rounded-xl bg-cover bg-center"
-        style={{ backgroundImage: `url(${banner})` }}
+        style={{
+          backgroundImage: `url('https://play-lh.googleusercontent.com/yDIjYDVuEuTZo1OkQKvEwujWGEjjvRdNdx-hdoM4PuPMS9YZUCcvswfc2Z5dMXd0bvNa=w851-h2160-rw')`,
+        }}
       ></div>
       <div className="shadow flex flex-col gap-4 text-sm p-4 mt-4">
         <a href="">About Dream League Soccer 2023</a>
@@ -49,7 +51,7 @@ const Artical = () => {
           To install Dream League Soccer 2023 on your mobile device:
         </p>
       </div>
-      <div className="flex flex-col gap-4 mt-8 text-sm">
+      <div className="flex flex-col gap-4 mt-8 text-sm text-gray-500">
         <p>
           Step 1: Go to APKPure.com and search for{" "}
           <span className="text-blue-400">Dream League Soccer 2023.</span>

@@ -25,7 +25,7 @@ const Navbar = () => {
         className={({ isActive }) =>
           isActive
             ? "font-bold underline  underline-offset-6   text-[#1276F7] underline-[#1276F7]  "
-            : "font-bold"
+            : ""
         }
       >
         Apps
@@ -35,7 +35,7 @@ const Navbar = () => {
         className={({ isActive }) =>
           isActive
             ? "font-bold underline  underline-offset-6   text-[#1276F7] underline-[#1276F7]"
-            : "font-bold"
+            : ""
         }
       >
         My Profile
@@ -53,8 +53,8 @@ const Navbar = () => {
     </div>
   );
   return (
-    <div>
-      <div className="navbar bg-base-100 shadow-sm">
+    <div className="sticky top-1000 z-1000">
+      <div className="navbar bg-base-100 shadow-sm   ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

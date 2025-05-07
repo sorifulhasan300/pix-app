@@ -17,7 +17,7 @@ const Register = () => {
     const photoURL = e.target.image.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
-    console.log(error);
+ 
     if (password.length < 6) {
       return setError("password length must 6 character");
     } else {
@@ -47,7 +47,7 @@ const Register = () => {
             navigate("/");
           });
         const user = userCredential.user;
-        console.log(user);
+       
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -58,10 +58,10 @@ const Register = () => {
   const handleGoogleSignIn = () => {
     googleSignIn()
       .then((result) => {
-        console.log(result);
+        
       })
       .catch((error) => {
-        console.log(error.message);
+       
       });
   };
   return (

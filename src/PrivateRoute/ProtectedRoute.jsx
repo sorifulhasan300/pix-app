@@ -5,7 +5,7 @@ import Loader from "../Components/Loader";
 
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = use(AuthContext);
-  console.log(user);
+
 
   if (loading) {
     return <Loader></Loader>;

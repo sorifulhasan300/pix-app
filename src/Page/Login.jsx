@@ -6,7 +6,7 @@ const Login = () => {
   const navigate = useNavigate();
   const { loginUser, googleSignIn } = use(AuthContext);
   const location = useLocation();
-  console.log(location);
+  
    
 
   const handleNavigate = () => {
@@ -28,7 +28,7 @@ const Login = () => {
   const handleGoogleSignIn = () => {
     googleSignIn()
       .then((result) => {
-        console.log(result);
+        
         location.state ? navigate(location?.state) : navigate("/");
       })
       .catch((error) => {

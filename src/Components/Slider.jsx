@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import img1 from "/slider-1.png";
-import img2 from "/slider-2.jpg";
+import img2 from "/reminder.jpg";
 import img3 from "/slider-3.jpg";
 import swiper, { useRef, useState } from "react";
 // Import Swiper React components
@@ -74,7 +74,7 @@ const Slide = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <img src={img3} alt="" />
+        <img src={img2} alt="" />
       </SwiperSlide>
       <SwiperSlide>
         <img src={img3} alt="" />

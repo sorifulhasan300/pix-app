@@ -35,12 +35,12 @@ const AppDetails = () => {
     e.preventDefault();
     const review = e.target.review.value;
     setUserReview([...userReview, review]);
-    console.log(userReview);
+    
   };
 
   const handleUserState = () => {
     setUserState(true);
-    console.log(userState);
+   
   };
 
   return (
@@ -58,7 +58,9 @@ const AppDetails = () => {
 
           <div className="flex items-center gap-4  justify-between">
             <div className="flex items-center gap-4">
-              <img width={60} className="rounded " src={thumbnail} alt="" />
+              <div className="shadow p-2 rounded">
+                <img width={60} className="rounded " src={thumbnail} alt="" />
+              </div>
               <div className="flex gap-2 text-sm items-center">
                 <div className="">
                   <FaStar color="#EFBF04"></FaStar>
@@ -72,13 +74,13 @@ const AppDetails = () => {
                 handleInstall(setInstall(!install));
                 handleUserState();
               }}
-              className="btn "
+              className="btn bg-[#1276F7] text-white rounded-xl"
             >
               {install ? "Install" : "Uninstall"}
             </button>
           </div>
           <div className="border border-gray-50 w-full"></div>
-          <div className="">
+          <div className="mt-8">
             <p className="text-xl">About This App</p>
             <p className="text-[#13131390] mt-4">{description}</p>
           </div>
@@ -93,7 +95,7 @@ const AppDetails = () => {
         <div className="">
           {userState ? (
             <div>
-              <div className="mt-8">
+              <div className="mt-15">
                 <form onSubmit={(e) => handleReviewSubmit(e)}>
                   <textarea
                     className="textarea disabled "
@@ -102,11 +104,7 @@ const AppDetails = () => {
                   ></textarea>
                   <br />
                   <button
-                    className={`${
-                      userState
-                        ? "btn mt-4 cursor-pointer"
-                        : "btn mt-4 tab-disabled "
-                    }`}
+                    className="btn mt-8 bg-[#1276F7] text-white rounded-xl"
                     type="submit"
                   >
                     Submit Review
@@ -120,8 +118,9 @@ const AppDetails = () => {
         </div>
 
         {/* Rating and review */}
-        <div className="mt-4">
-          <p className="text-xl">Ratings and Reviews</p>
+        <div className="border border-gray-50 mt-15 mb-8"></div>
+        <div className="">
+          <p className="text-xl ">Ratings and Reviews</p>
           <div className="p-4">
             <div className="review">
               {reviews?.map(({ user, rating, comment }, index) => {
