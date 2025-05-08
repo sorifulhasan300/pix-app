@@ -35,7 +35,7 @@ const MyProfile = () => {
         <div className="place-items-center w-4xl h-150 shadow py-4">
           <div className="avatar ">
             {loading ? (
-              <span className="loading loading-ring loading-xl"></span>
+              <div className="w-5 h-5 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
             ) : (
               <div className=" w-40 rounded-full  ring-offset-2">
                 {user ? (

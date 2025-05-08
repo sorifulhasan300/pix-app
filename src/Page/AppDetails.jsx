@@ -30,9 +30,7 @@ const AppDetails = () => {
     thumbnail,
   } = appDetails;
 
-  const handleInstall = () => {
-    console.log("hello");
-  };
+  const handleInstall = () => {};
 
   const handleReviewSubmit = (e) => {
     e.preventDefault();
@@ -41,7 +39,6 @@ const AppDetails = () => {
     const reviewObj = { review, rating };
     setUserReview([...userReview, reviewObj]);
   };
-  console.log(userReview);
 
   const handleUserState = () => {
     setUserState(true);

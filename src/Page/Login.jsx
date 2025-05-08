@@ -27,7 +27,7 @@ const Login = () => {
       .catch((error) => {
         Swal.fire({ title: "InValid Email or Password", icon: "error" });
       });
-    console.log({ email, password });
+    
     setLoading(false);
   };
 
@@ -48,7 +48,7 @@ const Login = () => {
   const emailRef = useRef();
   const handleResetPass = () => {
     const email = emailRef.current.value;
-    console.log(email);
+    
     forgetPassword(email)
       .then((result) => {
         Swal.fire({ title: "email send successfully", icon: "success" });

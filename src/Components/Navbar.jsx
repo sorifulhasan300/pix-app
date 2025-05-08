@@ -105,11 +105,11 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{link}</ul>
         </div>
-
+        <span className="loading loading-spinner loading-lg"></span>
         <div className="navbar-end flex gap-4">
           <div class="tooltip tooltip-bottom" data-tip={user?.displayName}>
             {loading ? (
-              <h1>loading...</h1>
+              <div className="w-5 h-5 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
             ) : (
               <div className="">
                 {user ? (
@@ -131,7 +131,7 @@ const Navbar = () => {
           </div>
 
           {loading ? (
-            <span className="loading loading-spinner loading-lg"></span>
+            <div className="w-5 h-5 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
           ) : (
             <div>
               {user ? (
