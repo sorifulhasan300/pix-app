@@ -6,3 +6,7 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
+#autoplay-progress ,span {
+  display: none;
+}

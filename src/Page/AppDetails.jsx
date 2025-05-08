@@ -48,7 +48,7 @@ const AppDetails = () => {
   };
 
   return (
-    <div className="w-11/12 mx-auto ">
+    <div className="w-11/12 mt-12 mx-auto ">
       <Helmet>
         <title>Apps Details</title>
       </Helmet>

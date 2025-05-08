@@ -41,7 +41,7 @@ const Apps = () => {
       <Helmet>
         <title>Apps Dashboard</title>
       </Helmet>
-      <div className="w-11/12    mx-auto">
+      <div className="w-11/12  mt-12  mx-auto">
         <Slider></Slider>
       </div>
       {/* treanding apps */}
@@ -91,7 +91,7 @@ const Apps = () => {
           ))}
         </div>
       </div>
-      <div className="w-10/12 mx-auto mt-10">
+      <div className="w-10/12  mx-auto mt-10">
         <h1 className="font-bold text-xl ">
           Popular Articles In Last 24 Hours
         </h1>

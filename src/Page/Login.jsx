@@ -90,7 +90,7 @@ const Login = () => {
               Forgot password?
             </a>
           </div>
-          <button type="submit" className="btn btn-neutral mt-4">
+          <button type="submit" className="bg-[#1276F7]  btn text-white mt-4">
             Login
           </button>
         </form>
@@ -129,7 +129,7 @@ const Login = () => {
         </button>
         <div>
           <a className="">
-            new to PixApps?{" "}
+            New to PixApps?{" "}
             <button
               onClick={() => handleNavigate()}
               className="link link-hover under-liner"

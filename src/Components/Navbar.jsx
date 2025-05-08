@@ -1,6 +1,7 @@
 import React, { use } from "react";
 import { NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../AuthProvider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -12,10 +13,16 @@ const Navbar = () => {
   const handleLogOut = () => {
     logOut()
       .then(() => {
-        console.log("log out successfully");
+        Swal.fire({
+          title: "log out successfully",
+          icon: "success",
+        });
       })
       .catch((error) => {
-        console.log(error);
+        Swal.fire({
+          title: "Something was wrong",
+          icon: "error",
+        });
       });
   };
   const link = (
@@ -54,7 +61,7 @@ const Navbar = () => {
   );
   return (
     <div className="">
-      <div className="navbar bg-base-100 shadow-sm   ">
+      <div className="navbar bg-base-100 shadow-sm fixed  left-0 z-[1000] top-0">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

@@ -26,16 +26,19 @@ const Footer = () => {
             installations.
           </p>
           <div className="flex gap-4 ">
-            <a href="">
+            <a href="https://www.instagram.com/hasibhasan1642/" target="_blank">
               <FaInstagram size={24}></FaInstagram>
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/sorifulhasan300" target="_blank">
               <MdFacebook size={24}></MdFacebook>
             </a>
-            <a href="">
+            <a
+              href="https://www.youtube.com/@sorifullhasan3818"
+              target="_blank"
+            >
               <FaYoutube size={24}></FaYoutube>
             </a>
-            <a href="">
+            <a href="https://telegram.org/" target="_blank">
               <FaTelegram size={24}></FaTelegram>
             </a>
           </div>

@@ -29,12 +29,12 @@ const CategoryCard = ({ app }) => {
           </div>
           <div className=" place-items-center mt-4 space-y-4">
             <div className="flex gap-2 text-sm items-center">
-              <LiaDownloadSolid></LiaDownloadSolid>
-              <p className="text-sm">{downloads}</p>
-            </div>
-            <div className="flex gap-2 text-sm items-center">
               <FaStar color="#EFBF04"></FaStar>
               <p className="text-sm">{rating}</p>
+            </div>
+            <div className="flex gap-2 text-sm items-center">
+              <LiaDownloadSolid></LiaDownloadSolid>
+              <p className="text-sm">{downloads}</p>
             </div>
           </div>
         </div>

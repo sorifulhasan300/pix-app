@@ -71,7 +71,7 @@ const Register = () => {
       <Helmet>
         <title>Register</title>
       </Helmet>
-      <h1 className="text-center font-bold mt-8">Register Account</h1>
+      <h1 className="text-center font-bold mt-8  ">Register Account</h1>
       <div className="card-body">
         <form onSubmit={handleRegister} className="fieldset">
           {/* Full Name */}
@@ -111,7 +111,7 @@ const Register = () => {
           />
           <button
             type="submit"
-            className="btn bg-white text-black border-[#e5e5e5] mt-4"
+            className="btn bg-[#1276F7]   text-white border-[#e5e5e5] mt-4"
           >
             Create an Account
           </button>

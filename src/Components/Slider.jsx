@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import slider1 from "/slider1.jpg";
 import slider2 from "/slider2.jpg";
+import slider3 from "/slider3.jpg";
 import swiper, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -67,7 +68,7 @@ const Slide = () => {
       navigation={true}
       modules={[Autoplay, Pagination, Navigation]}
       onAutoplayTimeLeft={onAutoplayTimeLeft}
-      className="mySwiper rounded "
+      className="mySwiper rounded shadow"
     >
       <SwiperSlide>
         <div className="w-full ">
@@ -77,6 +78,12 @@ const Slide = () => {
       <SwiperSlide>
         <div className="w-full ">
           <img src={slider2} alt="" />
+        </div>
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <div className="w-full ">
+          <img src={slider3} alt="" />
         </div>
       </SwiperSlide>
 

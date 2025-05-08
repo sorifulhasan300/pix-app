@@ -32,7 +32,7 @@ const Error = () => {
                 onClick={handleNavigate}
                 rel="noopener noreferrer"
                 href="#"
-                className="cursor-pointer px-8 py-3 font-semibold rounded dark:bg-violet-600 dark:text-gray-50"
+                className="cursor-pointer px-8 py-3 font-semibold rounded bg-[#1276F7] dark:text-gray-50"
               >
                 Back to homepage
               </button>

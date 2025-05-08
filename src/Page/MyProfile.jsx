@@ -1,6 +1,7 @@
 import React, { use } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { Helmet } from "react-helmet-async";
+import Swal from "sweetalert2";
 
 const MyProfile = () => {
   const { updateUserProfile, user, setUser, loading } = use(AuthContext);
@@ -12,10 +13,16 @@ const MyProfile = () => {
     updateUserProfile({ displayName: name, photoURL: image })
       .then(() => {
         setUser({ ...user, displayName: name, photoURL: image });
-        console.log("update sucessfuly");
+        Swal.fire({
+          title: "Profile Update successfully",
+          icon: "success",
+        });
       })
       .catch((error) => {
-        console.log(error);
+        Swal.fire({
+          title: "Something was wrong",
+          icon: "error",
+        });
         setUser(user);
       });
   };
@@ -32,12 +39,7 @@ const MyProfile = () => {
             ) : (
               <div className=" w-40 rounded-full  ring-offset-2">
                 {user ? (
-                  <img
-                    width="48"
-                    height="48"
-                    src={user.photoURL}
-                    alt=""
-                  />
+                  <img width="48" height="48" src={user.photoURL} alt="" />
                 ) : (
                   <img
                     width="48"
