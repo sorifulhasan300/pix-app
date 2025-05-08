@@ -109,7 +109,7 @@ const Navbar = () => {
         <div className="navbar-end flex gap-4">
           <div class="tooltip tooltip-bottom" data-tip={user?.displayName}>
             {loading ? (
-              <span className="loading loading-ring loading-xl"></span>
+              <h1>loading...</h1>
             ) : (
               <div className="">
                 {user ? (
@@ -131,7 +131,7 @@ const Navbar = () => {
           </div>
 
           {loading ? (
-            <span className="loading loading-ring loading-xl"></span>
+            <span className="loading loading-spinner loading-lg"></span>
           ) : (
             <div>
               {user ? (

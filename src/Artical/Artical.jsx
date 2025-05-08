@@ -5,7 +5,7 @@ import bannerArtical from "/banner2.webp";
 import { Helmet } from "react-helmet-async";
 const Artical = () => {
   return (
-    <div className="w-8/12 mx-auto">
+    <div className="w-8/12 mx-auto mt-12">
       <Helmet>
         <title>Article</title>
       </Helmet>
