@@ -14,7 +14,7 @@ const CategoryCard = ({ app }) => {
   return (
     <div onClick={() => handleNavigate()}>
       <div className="flex  gap-2 p-4 ">
-        <div className="w-80 ">
+        <div className="w-full">
           <div className=" place-items-center mt-4">
             <div className="w-30 p-2 shadow rounded-lg">
               <img

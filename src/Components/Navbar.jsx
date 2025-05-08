@@ -53,7 +53,7 @@ const Navbar = () => {
     </div>
   );
   return (
-    <div className="sticky top-1000 z-1000">
+    <div className="">
       <div className="navbar bg-base-100 shadow-sm   ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -114,7 +114,10 @@ const Navbar = () => {
                     alt="photo"
                   />
                 ) : (
-                  <img src="https://img.icons8.com/office/40/user.png" alt="User" />
+                  <img
+                    src="https://img.icons8.com/office/40/user.png"
+                    alt="User"
+                  />
                 )}
               </div>
             )}

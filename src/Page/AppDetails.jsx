@@ -20,7 +20,6 @@ const AppDetails = () => {
   const {
     banner,
     name,
-    status,
     downloads,
     rating,
     category,
@@ -61,7 +60,7 @@ const AppDetails = () => {
         <div className="space-y-4">
           <div className="items-center space-y-1.5 text-center md:text-start">
             <h1 className="font-bold text-2xl">{name}</h1>
-            <h1 className="text-[#131313]"> {developer}</h1>
+            <h1 className="text-gray-600 text-sm"> {developer}</h1>
           </div>
 
           <div className="flex flex-col md:flex-row items-center gap-4  justify-between">
@@ -90,6 +89,7 @@ const AppDetails = () => {
           <div className="border border-gray-50 w-full"></div>
           <div className="mt-8">
             <p className="text-xl">About This App</p>
+            <p className="text-sm text-gray-600">{category}</p>
             <p className="text-[#13131390] mt-4">{description}</p>
           </div>
           <div className=" flex gap-4 flex-wrap">
@@ -105,14 +105,21 @@ const AppDetails = () => {
             <div>
               <div className="mt-15">
                 <form onSubmit={(e) => handleReviewSubmit(e)}>
-                  <textarea
+                  {/* <textarea
                     type="text"
                     placeholder="Add Your Review"
                     name="review"
                     className="textarea textarea-info"
-                  ></textarea>
-                  <br />
-                  <br />
+                  ></textarea> */}
+                  <fieldset className="fieldset mb-4">
+                    <legend className="fieldset-legend ">Your Review</legend>
+                    <textarea
+                      className="textarea h-24"
+                      placeholder="Review"
+                      name="review"
+                      type="text"
+                    ></textarea>
+                  </fieldset>
                   <input
                     type="number"
                     name="rating"
@@ -120,13 +127,13 @@ const AppDetails = () => {
                     required
                     placeholder="Rating 1 to 5"
                     min="1"
-                    max="10"
+                    max="5"
                     title="Must be between be 1 to 10"
                   />
                   <p className="validator-hint ">Rating 1 to 5</p>
 
                   <button
-                    className="btn mt-8 bg-[#1276F7] text-white "
+                    className="btn mt-4 bg-[#1276F7] text-white "
                     type="submit"
                   >
                     Submit Review
@@ -140,14 +147,16 @@ const AppDetails = () => {
         </div>
 
         {/* Rating and review */}
-        <div className="border border-gray-50 mt-15 mb-8"></div>
-        <div className="">
-          <p className="text-xl ">Ratings and Reviews</p>
-          <div className="p-4">
-            <div className="review">
+        <p className="text-xl mt-16">Ratings and Reviews</p>
+        <div className=" ">
+          <div className="  space-y-4 mt-4">
+            <div className="review ">
               {userReview?.map((review, index) => {
                 return (
-                  <div className="space-y-4" key={index}>
+                  <div
+                    className="space-y-4 p-4 border border-gray-50 mt-4"
+                    key={index}
+                  >
                     <div className="flex  items-center  gap-4">
                       {user.photoURL ? (
                         <img
@@ -169,9 +178,50 @@ const AppDetails = () => {
 
                       <div className="">
                         <p>{user.displayName}</p>
-                        <p>{review.review}</p>
                       </div>
                     </div>
+                    <div className="">
+                      <p className="mb-4">{review.review}</p>
+                      <div className="flex gap-4">
+                        <div className="flex items-center gap-2">
+                          <div className="flex">
+                            <FaStar color="#EFBF04"></FaStar>
+                            <FaStar color="#EFBF04"></FaStar>
+                            <FaStar color="#EFBF04"></FaStar>
+                          </div>
+                          <p>{review.rating}</p>
+                        </div>
+                        <p className="">April 20, 2025</p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+            {/* existing review */}
+            {reviews?.map(({ user, rating, comment, index }) => {
+              return (
+                <div
+                  className=" border border-gray-50 p-4 space-y-4 mt-4"
+                  key={index}
+                >
+                  <div className=" mt-4 mb-4"></div>
+                  <div className="flex  items-center  gap-4">
+                    <img
+                      className="rounded-full"
+                      width="48"
+                      height="48"
+                      src="https://img.icons8.com/color/48/user-male-circle--v1.png"
+                      alt="img"
+                    />
+
+                    <div className="">
+                      <p>{user}</p>
+                    </div>
+                  </div>
+
+                  <div className=" space-y-4">
+                    <p>{comment}</p>
                     <div className="flex gap-4">
                       <div className="flex items-center gap-2">
                         <div className="flex">
@@ -179,15 +229,14 @@ const AppDetails = () => {
                           <FaStar color="#EFBF04"></FaStar>
                           <FaStar color="#EFBF04"></FaStar>
                         </div>
-                        <p>{review.rating}</p>
+                        <p>{rating}</p>
                       </div>
                       <p className="">April 20, 2025</p>
                     </div>
-                    <div className="border border-gray-50 mt-4 mb-4"></div>
                   </div>
-                );
-              })}
-            </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

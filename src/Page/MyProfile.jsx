@@ -36,13 +36,13 @@ const MyProfile = () => {
                     width="48"
                     height="48"
                     src={user.photoURL}
-                    alt="user-male-circle--v1"
+                    alt=""
                   />
                 ) : (
                   <img
                     width="48"
                     height="48"
-                    src="https://img.icons8.com/color/48/user-male-circle--v1.png"
+                    src=""
                     alt="user-male-circle--v1"
                   />
                 )}
@@ -59,7 +59,7 @@ const MyProfile = () => {
           >
             <label className="label">Full Name</label>
             <input
-              className="bg-gray-50 rounded mt-4  p-4 w-full"
+              className="bg-gray-50 rounded outline outline-[#1276F7] mt-4  p-4 w-full"
               placeholder="Your Full Name"
               type="text"
               name="name"
@@ -67,7 +67,7 @@ const MyProfile = () => {
             />
             <label className="label mt-4">image Url</label>
             <input
-              className="bg-gray-50 rounded mt-4  p-4 w-full"
+              className="bg-gray-50 rounded mt-4 outline outline-[#1276F7]   p-4 w-full"
               placeholder="Your Image Url"
               type="text"
               name="image"
@@ -75,7 +75,7 @@ const MyProfile = () => {
             />
             <button
               type="submit"
-              className="btn bg-gray-50 mt-10 text-gray-600"
+              className="btn bg-[#1276F7] text-white mt-10 text-gray-800"
             >
               Update Profile
             </button>

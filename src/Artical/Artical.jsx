@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
-import banner from "/banner.jpg";
+import bannerArtical from "/banner2.webp";
+
 import { Helmet } from "react-helmet-async";
 const Artical = () => {
   return (
@@ -25,7 +26,7 @@ const Artical = () => {
       <div
         className="mt-4 mb-4 w-full h-[500px] rounded-xl bg-cover bg-center"
         style={{
-          backgroundImage: `url('https://play-lh.googleusercontent.com/yDIjYDVuEuTZo1OkQKvEwujWGEjjvRdNdx-hdoM4PuPMS9YZUCcvswfc2Z5dMXd0bvNa=w851-h2160-rw')`,
+          backgroundImage: `url(${bannerArtical})`,
         }}
       ></div>
       <div className="shadow flex flex-col gap-4 text-sm p-4 mt-4">

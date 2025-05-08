@@ -53,7 +53,7 @@
     "category": "Healthcare",
     "rating": 4.7,
     "status": "false",
-    "description": "Samsung Health helps you track your activity, nutrition, sleep, and manage your overall health.",
+    "description": "Samsung Health is an all-in-one fitness and wellness app that helps users maintain a healthy lifestyle. It tracks daily activities like walking, running, sleep, and calorie consumption. Users can monitor their diet, heart rate, weight, and stress levels. The app also offers fitness challenges and goal-setting features to stay motivated. It supports integration with various fitness devices and third-party health apps.Samsung Health provides insights and data to improve your physical and mental well-being.It features guided workouts, meditation sessions, and sleep tracking tools.Users can sync data across multiple devices for seamless health management.The app supports community challenges to keep users motivated.With a user-friendly interface, it's suitable for both beginners and fitness enthusiasts.",
     "features": [
       "Activity tracking",
       "Sleep analysis",
@@ -77,7 +77,7 @@
     "category": "Productivity",
     "rating": 4.3,
     "status": "true",
-    "description": "Stay focused and reduce distractions using scientifically backed focus sessions.",
+    "description": "Plant a seed in Forest when you need to put down your phone and stay focused to get your to do list done.As you stay focused, this seed will gradually grow into a tree. However, if you cannot resist the temptation of using your phone and leave the app, your tree will wither.The sense of achievement while seeing a flourishing forest with each tree representing your dedication motivates you to reduce procrastination, and helps you build a good habit of time management!Motivation and Gamification- Grow your very own forest with each tree representing your effort.- Earn rewards by staying focused and unlocking adorable trees!",
     "features": ["Distraction blocker", "Focus timer", "Ambient sounds"],
     "reviews": [
       {
@@ -97,7 +97,7 @@
     "category": "Education",
     "rating": 4.8,
     "status": "false",
-    "description": "Learn school subjects through interactive quizzes and challenges with EduQuest.",
+    "description": "Learn Spanish with language learning designed to build confidence from day one. Connect with our online language learning Community and get feedback on exercises and Spanish vocabulary from fluent speakers. Easily see what needs more revision, from Spanish verbs to pronunciation, and learn how to speak Spanish plus other languages faster!",
     "features": [
       "Subject-wise quizzes",
       "Live competitions",
@@ -115,13 +115,13 @@
     "id": "app015",
     "name": "FitLog",
     "developer": "ActiveWell Ltd.",
-    "thumbnail": "https://play-lh.googleusercontent.com/ZsfvolSozM7dk69sYdJLYpeS08Wu1ELstlKZBX2nAJ0z2VdzB-B2kHZ21F7dg7rYJA=w240-h480-rw",
+    "thumbnail": "https://i.ibb.co.com/tPCSXHLk/unnamed.webp",
     "banner": "https://fitlogclassic.ca/wp-content/uploads/2022/11/fitlog-1-1024x407.png",
     "downloads": 2700000,
     "category": "Healthcare",
     "rating": 4.6,
     "status": "false",
-    "description": "FitLog helps you log workouts, track meals, and monitor your daily activity levels.",
+    "description": "Personalized Workout Plans: Fitlog creates customized exercise routines based on your physical indicators, age, gender, fitness goals, and available equipment. Android Apps on Google PlayComprehensive Progress Tracking: Users can monitor their fitness journey by logging weight, body fat percentage, measurements, and progress photos, all accessible from a centralized dashboard. fitlog.ioNutrition and Meal Logging: The app includes a food log feature, allowing users to track their dietary intake and align it with their fitness objectives.Trainer-Client Collaboration: Fitlog facilitates seamless communication between trainers and clients, enabling document sharing, workout assignments, and progress reviews. fitlog-coaching-system-ios.soft112.com",
     "features": ["Workout tracker", "Water intake log", "Calorie calculator"],
     "reviews": [
       {
@@ -141,7 +141,7 @@
     "category": "Productivity",
     "rating": 4.4,
     "status": "false",
-    "description": "A clean, minimal note-taking app perfect for quick thoughts, ideas, and tasks.",
+    "description": "Notedown is a modern markdown-based note-taking app built for clarity and productivity.It supports full markdown syntax including tables, checklists, and syntax-highlighted code blocks.Live preview lets users see formatted text instantly while writing.The app allows drawing diagrams directly inside notes for better visual explanation.You can embed interactive content like CodeSandbox or videos for dynamic documentation.Notedown supports code execution within notes, ideal for developers and learners.Tag-based organization helps keep notes structured and easy to find.Notes can be synced across devices, ensuring access from anywhere.Its minimal interface is distraction-free, encouraging focused writing.Available on web, iOS, and Android, it suits students, professionals, and creators alike.",
     "features": ["Rich text support", "Dark mode", "Sync across devices"],
     "reviews": [
       {
@@ -161,7 +161,7 @@
     "category": "Healthcare",
     "rating": 4.7,
     "status": "true",
-    "description": "Track your heart rate, blood pressure, and overall heart health with HeartWatch.",
+    "description": "HeartWatch is a comprehensive health monitoring app designed for Apple Watch and iPhone users, focusing on heart rate tracking and overall wellness.YouTubeIt offers detailed insights into your heart rate patterns, including daily, resting, and workout-specific metrics. The app's dashboard presents over 30 health metrics, allowing users to monitor trends and make informed health decisions.HeartWatchHeartWatch supports customizable heart rate alerts, helping users stay within desired zones during activities. It also integrates with AutoSleep for sleep tracking, providing a holistic view of your health.HeartWatch+2HeartWatch+2Lifewire+2With a user-friendly interface and emphasis on privacy—no data leaves your device—HeartWatch is a valuable tool for anyone looking to monitor and improve their heart health.",
     "features": ["Heart rate monitor", "BP tracking", "Weekly health summary"],
     "reviews": [
       {
@@ -171,18 +171,17 @@
       }
     ]
   },
-
   {
     "id": "app018",
     "name": "Udemy",
     "developer": "Udemy",
-    "thumbnail": "https://play-lh.googleusercontent.com/dsCkmJE2Fa8IjyXERAcwc5YeQ8_NvbZ4_OI8LgqyjILpXUfS5YhEcnAMajKPrZI-og=s48-rw",
+    "thumbnail": "https://images.seeklogo.com/logo-png/40/2/udemy-logo-png_seeklogo-409219.png",
     "banner": "https://cdn.fordhamram.com/wp-content/uploads/Udemy-Review-for-2023-Are-Udemy-Courses-Worth-It.png",
     "downloads": 1800000,
     "category": "Education",
     "rating": 4.6,
     "status": "true",
-    "description": "Skill up to success. Udemy is a leading destination for online courses that empowers you to grow professionally and personally. Get the app to explore our expansive library of thousands of topics with cutting-edge online video courses in Coding, Development, Python, Java, Business, Marketing, SEO, SEM, Drawing, Photography, and much moreTap into knowledge from around the world by learning from real-world experts. With courses in over 65 languages, you’ll probably find the right course for your goals.",
+    "description": "Udemy is a leading online learning platform offering a vast library of courses across various subjects.The app provides access to over 250,000 video courses taught by expert instructors worldwide.Users can learn at their own pace, with features like offline downloads and adjustable playback speeds.Courses cover topics ranging from programming and business to photography and personal development.Interactive elements such as quizzes, assignments, and coding exercises enhance the learning experience.The app supports multiple languages, catering to a global audience.Learners can engage with instructors through Q&A sections and direct messaging (if enabled).Certificates of completion are available for many courses, adding value to your learning journey.The user-friendly interface includes dark mode and Chromecast support for flexible viewing options.Available on both iOS and Android, Udemy makes learning accessible anytime, anywhere.",
     "features": [
       "Custom study schedules",
       "Pomodoro timer",
@@ -196,7 +195,6 @@
       }
     ]
   },
-
   {
     "id": "app019",
     "name": "Khan Academy",
@@ -207,7 +205,7 @@
     "category": "Education",
     "rating": 4.8,
     "status": "true",
-    "description": "Learn anything for free with interactive video lessons.",
+    "description": "Khan Academy is a free educational app offering thousands of interactive exercises, videos, and articles across subjects like math, science, economics, and history.It provides a personalized learning dashboard, allowing learners to study at their own pace in and outside of the classroom.The app supports mastery learning, ensuring students fully grasp a concept before moving on to the next.It includes practice exercises and instructional videos to reinforce understanding.Khan Academy offers test preparation resources for standardized exams such as the SAT, LSAT, and Praxis.The app is available in multiple languages, making it accessible to a global audience.Teachers can utilize the app to assign lessons and monitor student progress.Khan Academy Kids, a separate app, caters to children aged 2–8, focusing on early literacy, math, and social-emotional development.All content is completely free, with no ads or subscriptions, supporting equitable access to education.Available on iOS and Android, Khan Academy empowers learners worldwide to achieve their educational goals.",
     "features": ["Video lectures", "Practice quizzes", "Progress dashboard"],
     "reviews": [
       {
@@ -227,7 +225,7 @@
     "category": "Education",
     "rating": 4.5,
     "status": "true",
-    "description": "Create flashcards and study smarter with Quizlet.",
+    "description": "The app features various study modes, including Learn, Write, Match, and Test, each designed to reinforce memory through different techniques .Quizlet's Learn mode employs a personalized study path, adapting to the user's progress and focusing on areas that need improvementFor a more interactive approach, the Match mode turns studying into a timed game, enhancing engagement and retentionThe app supports audio pronunciation, aiding in language learning and correct pronunciation of termsQuizlet is available on multiple platforms, including iOS, Android, and web browsers, ensuring accessibility across devices While the app is free to use, a premium subscription unlocks additional features such as advanced progress tracking and offline accessWith its user-friendly interface and diverse study tools, Quizlet is a valuable resource for students and lifelong learners seeking to enhance their knowledge efficiently.",
     "features": ["Flashcards", "Test mode", "Games for learning"],
     "reviews": [
       {
@@ -247,7 +245,7 @@
     "category": "Education",
     "rating": 4.7,
     "status": "true",
-    "description": "Learn new languages in a fun, gamified way.",
+    "description": "Duolingo is a popular language-learning app that offers an engaging and effective way to learn over 40 languages, including Spanish, French, German, Japanese, and even fictional languages like Klingon and High Valyrian.The app provides bite-sized lessons that focus on speaking, reading, writing, and listening skills, making it suitable for learners of all ages and proficiency levels. It uses gamification techniques such as streaks, badges, and leaderboards to motivate users and keep them engagedDuolingo offers a premium subscription called Super Duolingo, which removes ads and provides additional features. The app is available on iOS, Android, and web browsers, making it accessible on multiple platformsWith its user-friendly interface and interactive lessons, Duolingo is one of the most popular tools for language learners worldwide, helping users stay motivated and track their progress efficiently.",
     "features": ["Daily lessons", "Streak tracker", "Gamified quizzes"],
     "reviews": [
       {
@@ -267,7 +265,7 @@
     "category": "Healthcare",
     "rating": 4.3,
     "status": "true",
-    "description": "Monitor your fitness goals with real-time analytics.",
+    "description": "FitTrack is a comprehensive health and fitness platform that combines smart scale technology with a mobile app to help users monitor and improve their overall well-being. The system includes the FitTrack Dara smart scale and the Hume Health app, which together provide detailed insights into various health metrics.The FitTrack Dara scale offers accurate measurements of 17 body composition metrics, including body fat percentage, muscle mass, hydration levels, and metabolic rate. These measurements are synced with the Hume Health app via Bluetooth, allowing users to track their progress over timeThe Hume Health app serves as the central hub for managing health data. It provides daily and weekly health reports, personalized nutrition and fitness coaching tailored to individual goals, and the ability to track sleep, activity, and nutrition. The app also integrates with other health platforms like Apple Health and Google Fit, enabling a comprehensive view of one's health dataDesigned with user experience in mind, the FitTrack system features a sleek, user-friendly interface that makes it easy for individuals of all fitness levels to navigate and utilize. Whether you're aiming to lose weight, build muscle, or simply maintain a healthy lifestyle, FitTrack offers the tools and insights needed to achieve your health goals.",
     "features": ["Step counter", "Calorie tracker", "Workout planner"],
     "reviews": [
       {
@@ -287,7 +285,7 @@
     "category": "Healthcare",
     "rating": 4.6,
     "status": "true",
-    "description": "Track diet and exercise to reach your health goals.",
+    "description": "MyFitnessPal is a comprehensive health and fitness app designed to help users track their nutrition, exercise, and overall wellness. It offers a user-friendly interface that allows individuals to log their daily food intake, monitor physical activity, and set personalized health goals.The app boasts a vast database of over 14 million foods, enabling users to easily search and add meals. Features like barcode scanning and the Meal Scan tool simplify the logging process, making it convenient to track meals accuratelyMyFitnessPal also integrates with various fitness trackers and apps, such as Fitbit, Garmin Connect, and Apple Health, allowing for seamless synchronization of activity data. This integration provides a holistic view of one's health journeyAvailable on iOS, Android, and web platforms, MyFitnessPal caters to a wide range of users seeking to improve their health and fitness. Whether aiming to lose weight, build muscle, or maintain a healthy lifestyle, the app offers the tools and support needed to achieve these goalsFor those interested in advanced features, MyFitnessPal offers a Premium subscription that includes benefits like ad-free usage, detailed macronutrient analysis, and custom goalsIn summary, MyFitnessPal serves as a versatile and accessible tool for individuals committed to enhancing their health and fitness through informed tracking and goal setting.",
     "features": ["Food diary", "Macro tracking", "Community support"],
     "reviews": [
       {
@@ -307,7 +305,7 @@
     "category": "Healthcare",
     "rating": 4.8,
     "status": "true",
-    "description": "Meditation and sleep support for a healthier mind.",
+    "description": "Welcome to Headspace, your guide to mental health, mindfulness, and meditation. Stress less, sleep deeper, and feel happier with expert-guided meditations, one-on-one mental health coaching, therapy and daily mindfulness exercises. Choose from hundreds of meditation sessions on how to meditate, sleep better, manage stress, learn breathing techniques to relieve anxiety, relax, achieve calmness and improve mental wellness.Meditate, practice mindfulness, relax, and sleep well. Headspace can help you stress less in just a few minutes a day, proven to reduce",
     "features": ["Guided meditations", "Sleep sounds", "Mindfulness tracking"],
     "reviews": [
       {
@@ -327,7 +325,7 @@
     "category": "Healthcare",
     "rating": 4.4,
     "status": "true",
-    "description": "Stay hydrated with smart water intake reminders.",
+    "description": "WaterMinder is a hydration tracking app designed to help users monitor and maintain their daily water intake. It offers a user-friendly interface that allows individuals to log their water consumption and stay on top of their hydration goals.The app features a customizable character that visually represents your hydration progress throughout the day. As you log your water intake, the character fills up, providing a clear and motivating visual cue of your progressWaterMinder supports a variety of drink types, including water, coffee, tea, juice, and more. Users can customize their drink options and set reminders to ensure they stay hydrated. The app also provides detailed statistics and trends, allowing users to track their hydration habits over timeFor those using Apple devices, WaterMinder offers integration with the Apple Watch, enabling users to log their water intake directly from their wrist. The app also supports iOS 17 features, including interactive widgets and a new blue theme for a refreshed user experienceIn summary, WaterMinder is a comprehensive and customizable hydration tracking app that helps users stay motivated and maintain healthy hydration habits. Whether you're looking to improve your overall health or simply want to ensure you're drinking enough water each day, WaterMinder provides the tools and features to support your goals.",
     "features": ["Hydration tracking", "Custom goals", "Daily reminders"],
     "reviews": [
       {
@@ -367,7 +365,7 @@
     "category": "Productivity",
     "rating": 4.7,
     "status": "true",
-    "description": "All-in-one workspace for notes, tasks, and databases.",
+    "description": "Notion is a versatile all-in-one workspace designed to help individuals and teams organize their work and life. It combines notes, tasks, databases, wikis, calendars, and more into a single platform, making it ideal for personal productivity, project management, and collaborative work.Tool Finder+3Notion+3The US Sun+3At its core, Notion is built around a flexible system of blocks —individual pieces of content that can be text, images, tables, checklists, or embeds. These blocks can be easily rearranged, nested, and customized to suit various workflows. Users can create rich documents, manage tasks, track projects, and build knowledge bases, all within a unified interface.Notion also offers powerful database capabilities, allowing users to create custom views such as tables, kanban boards, calendars, and galleries. These databases can be linked together, filtered, and sorted, providing a dynamic way to manage information. Additionally, Notion supports formulas and relations, enabling advanced data manipulation and organization.",
     "features": ["Custom templates", "Database views", "Note taking"],
     "reviews": [
       {
@@ -387,7 +385,7 @@
     "category": "Productivity",
     "rating": 4.6,
     "status": "true",
-    "description": "Track your tasks and to-dos with ease.",
+    "description": "Todoist is a task management app designed to help individuals and teams stay organized and productive.The app allows users to create, manage, and prioritize tasks across various projects and deadlines.With features like due dates, reminders, and labels, Todoist helps users stay on track with their responsibilities.It supports natural language processing, making it easy to add tasks with phrases like tomorrow at 10 AM.Todoist integrates with various platforms, including Google Calendar, Slack, and Zapier, for seamless workflow.The app offers a simple yet powerful interface that is easy to use, whether for personal or professional tasks.Users can organize tasks with color-coded projects and filter tasks by priority or due date.Todoist provides productivity tracking through visual charts that show progress on tasks and goals.Available on iOS, Android, macOS, Windows, and the web, Todoist ensures users can stay productive on any device.The app offers both free and premium versions, with the premium version unlocking additional features like reminders and task templates.",
     "features": ["Recurring tasks", "Priority levels", "Reminders"],
     "reviews": [
       {
@@ -402,12 +400,12 @@
     "name": "Google Keep",
     "developer": "Google LLC",
     "thumbnail": "https://image.winudf.com/v2/image1/Y29tLmdvb2dsZS5hbmRyb2lkLmtlZXBfaWNvbl8xNjIyMTM0ODY3XzA0NQ/icon.webp?w=320&fakeurl=1&type=.webp",
-    "banner": "https://image.winudf.com/v2/image1/Y29tLmdvb2dsZS5hbmRyb2lkLmtlZXBfYmFubmVyXzE1NjE0MjAzOThfMDI5/banner.jpg?fakeurl=1&w=600",
+    "banner": "https://miro.medium.com/v2/resize:fit:900/1*Ltr2C6ItYckrwY_WoJ4k0w.jpeg",
     "downloads": 9000000,
     "category": "Education",
     "rating": 4.4,
     "status": "true",
-    "description": "Quick notes, lists, and reminders — synced everywhere.",
+    "description": "The app seamlessly integrates with other Google services, such as Google Docs, enabling you to copy notes directly into documents. This integration enhances productivity and streamlines your workflow.Google Keep is available on multiple platforms, including Android, iOS, and the web, ensuring your notes are accessible wherever you go. The app syncs across devices, keeping your information up to date in real-timeWhether you're jotting down quick ideas, creating to-do lists, or collaborating with others, Google Keep provides a simple yet powerful solution for managing your notes and tasks",
     "features": ["Color-coded notes", "Voice memos", "Cross-device sync"],
     "reviews": [
       {

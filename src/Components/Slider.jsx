@@ -2,9 +2,9 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img1 from "/slider-1.png";
-import img2 from "/reminder.jpg";
-import img3 from "/slider-3.jpg";
+
+import slider1 from "/slider1.jpg";
+import slider2 from "/slider2.jpg";
 import swiper, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -59,7 +59,7 @@ const Slide = () => {
       centeredSlides={true}
       autoplay={{
         delay: 4000,
-        disableOnInteraction: false,
+        disableOnInteraction: true,
       }}
       pagination={{
         clickable: true,
@@ -67,19 +67,17 @@ const Slide = () => {
       navigation={true}
       modules={[Autoplay, Pagination, Navigation]}
       onAutoplayTimeLeft={onAutoplayTimeLeft}
-      className="mySwiper h-[600px]"
+      className="mySwiper rounded "
     >
-      <SwiperSlide className=" border-red-600">
-        <div
-          className="w-full h-[200px] lg:h-[600px] rounded-xl "
-          style={{ backgroundImage: `url(${img1})` }}
-        ></div>
+      <SwiperSlide>
+        <div className="w-full ">
+          <img src={slider1} alt="" />
+        </div>
       </SwiperSlide>
       <SwiperSlide>
-        <img src={img2} alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={img3} alt="" />
+        <div className="w-full ">
+          <img src={slider2} alt="" />
+        </div>
       </SwiperSlide>
 
       <div className="autoplay-progress" slot="container-end">
