@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import { Outlet, useNavigate } from "react-router";
 import Footer from "../Components/Footer";
+import { Helmet } from "react-helmet-async";
 
 const Error = () => {
   const navigate = useNavigate();
@@ -11,6 +12,9 @@ const Error = () => {
   return (
     <div>
       <main className="min-h-screen dark:bg-gray-50">
+        <Helmet>
+          <title>404 Error</title>
+        </Helmet>
         <section className="flex items-center h-full p-16 dark:bg-gray-50 dark:text-gray-800">
           <div className="container flex flex-col items-center justify-center px-5 mx-auto my-8">
             <div className="max-w-md text-center">

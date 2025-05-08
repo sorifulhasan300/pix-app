@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import banner from "/banner.jpg";
+import { Helmet } from "react-helmet-async";
 const Artical = () => {
   return (
     <div className="w-8/12 mx-auto">
+      <Helmet>
+        <title>Article</title>
+      </Helmet>
       <h1 className="text-xl mb-4">
         How to Download Dream League Soccer 2025 APK Latest Version 12.140 for
         Android 2025

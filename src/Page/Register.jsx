@@ -2,6 +2,8 @@ import React, { use, useState } from "react";
 import { CiLogin } from "react-icons/ci";
 import { useNavigate } from "react-router";
 import { AuthContext } from "../AuthProvider/AuthProvider";
+import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
   const { registerUser, googleSignIn, user, setUser, updateUserProfile } =
@@ -17,21 +19,24 @@ const Register = () => {
     const photoURL = e.target.image.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
- 
+
     if (password.length < 6) {
-      return setError("password length must 6 character");
-    } else {
-      setError("");
+      return Swal.fire({
+        title: "password length must 6 character",
+        icon: "error",
+      });
     }
     if (!/[a-z]/.test(password)) {
-      return setError("Must have at least one lowercase letter");
-    } else {
-      setError("");
+      return Swal.fire({
+        title: "Must have at least one lowercase letter",
+        icon: "error",
+      });
     }
     if (!/[A-Z]/.test(password)) {
-      return setError("Must have at least one uppercase letter");
-    } else {
-      setError("");
+      return Swal.fire({
+        title: "Must have at least one uppercase letter",
+        icon: "error",
+      });
     }
 
     registerUser(email, password)
@@ -41,31 +46,31 @@ const Register = () => {
           .then(() => {
             setUser({ ...user, displayName: name, photoURL: photoURL });
             navigate("/");
+            Swal.fire({ title: "Signed up Successful!", icon: "success" });
           })
           .catch((error) => {
             setUser(user);
             navigate("/");
+            Swal.fire({ title: "Something was wrong!", icon: "success" });
           });
         const user = userCredential.user;
-       
       })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorMessage);
-      });
+      .catch((error) => {});
   };
   const handleGoogleSignIn = () => {
     googleSignIn()
       .then((result) => {
-        
+        Swal.fire({ title: "Login Successful!", icon: "success" });
       })
       .catch((error) => {
-       
+        Swal.fire({ title: "Something was wrong!", icon: "error" });
       });
   };
   return (
     <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <Helmet>
+        <title>Register</title>
+      </Helmet>
       <h1 className="text-center font-bold mt-8">Register Account</h1>
       <div className="card-body">
         <form onSubmit={handleRegister} className="fieldset">
@@ -145,11 +150,11 @@ const Register = () => {
           Register with Google
         </button>
         <div className="flex place-items-center ">
-          <a className="mr-4">Already have an account?</a>
-          <CiLogin />
+          <a className="mr-2">Already have an account?</a>
+
           <button
             onClick={() => handleNavigate()}
-            className="font-bold link link-hover "
+            className="underline link link-hover "
           >
             Login
           </button>

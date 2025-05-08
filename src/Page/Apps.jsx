@@ -5,6 +5,7 @@ import Slider from "../Components/Slider";
 import { FaFire } from "react-icons/fa";
 import ArticalCard from "../Artical/ArticalCard";
 import FindApk from "../Components/FindApk";
+import { Helmet } from "react-helmet-async";
 
 const Apps = () => {
   const [trendingApp, setTrendingApp] = useState([]);
@@ -37,6 +38,9 @@ const Apps = () => {
 
   return (
     <div className="">
+      <Helmet>
+        <title>Apps Dashboard</title>
+      </Helmet>
       <div className="">
         <Slider></Slider>
       </div>

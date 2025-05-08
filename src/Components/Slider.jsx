@@ -53,6 +53,7 @@ const Slide = () => {
     //     style={{ backgroundImage: `url('/slider-2.jpg')` }}
     //   ></div>
     // </Slider>
+
     <Swiper
       spaceBetween={30}
       centeredSlides={true}
@@ -66,12 +67,13 @@ const Slide = () => {
       navigation={true}
       modules={[Autoplay, Pagination, Navigation]}
       onAutoplayTimeLeft={onAutoplayTimeLeft}
-      className="mySwiper"
+      className="mySwiper h-[600px]"
     >
-      <SwiperSlide className="h-[200px]">
-        <div className="w-full h-[200px]">
-          <img src={img1} alt="" />
-        </div>
+      <SwiperSlide className=" border-red-600">
+        <div
+          className="w-full h-[200px] lg:h-[600px] rounded-xl "
+          style={{ backgroundImage: `url(${img1})` }}
+        ></div>
       </SwiperSlide>
       <SwiperSlide>
         <img src={img2} alt="" />

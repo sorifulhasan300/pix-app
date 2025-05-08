@@ -1,42 +1,70 @@
-import React, { use } from "react";
+import React, { use, useRef } from "react";
+import Swal from "sweetalert2";
 import { useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../AuthProvider/AuthProvider";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
   const navigate = useNavigate();
-  const { loginUser, googleSignIn } = use(AuthContext);
+  const { loginUser, googleSignIn, forgetPassword, setLoading } =
+    use(AuthContext);
   const location = useLocation();
-  
-   
 
   const handleNavigate = () => {
     navigate("/auth/register");
   };
+
+  // User login
   const handleUserLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
     loginUser(email, password)
-      .then((result) =>
-        location.state ? navigate(location?.state) : navigate("/")
-      )
-      .catch((error) => {
-        console.log("InValid Email or Password");
-      });
-    console.log({ email, password });
-  };
-  const handleGoogleSignIn = () => {
-    googleSignIn()
       .then((result) => {
-        
+        Swal.fire({ title: "Login Successful!", icon: "success" });
         location.state ? navigate(location?.state) : navigate("/");
       })
       .catch((error) => {
-        console.log(error.message);
+        Swal.fire({ title: "InValid Email or Password", icon: "error" });
+      });
+    console.log({ email, password });
+    setLoading(false);
+  };
+
+  // Google login
+  const handleGoogleSignIn = () => {
+    googleSignIn()
+      .then((result) => {
+        Swal.fire({ title: "Login Successful!", icon: "success" }),
+          location.state ? navigate(location?.state) : navigate("/");
+      })
+      .catch((error) => {
+        Swal.fire({
+          title: "Something was wrong plz try again",
+          icon: "error",
+        });
+      });
+  };
+  const emailRef = useRef();
+  const handleResetPass = () => {
+    const email = emailRef.current.value;
+    console.log(email);
+    forgetPassword(email)
+      .then((result) => {
+        Swal.fire({ title: "email send successfully", icon: "success" });
+      })
+      .catch((error) => {
+        Swal.fire({
+          title: "Something was wrong plz try again",
+          icon: "error",
+        });
       });
   };
   return (
     <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <Helmet>
+        <title>Login</title>
+      </Helmet>
       <div className="card-body">
         <form onSubmit={handleUserLogin} className="fieldset">
           <label className="label">Email</label>
@@ -46,6 +74,7 @@ const Login = () => {
             name="email"
             className="input"
             placeholder="Email"
+            ref={emailRef}
           />
           <label className="label">Password</label>
           <input
@@ -57,7 +86,9 @@ const Login = () => {
           />
 
           <div>
-            <a className="link link-hover">Forgot password?</a>
+            <a onClick={() => handleResetPass()} className="link link-hover">
+              Forgot password?
+            </a>
           </div>
           <button type="submit" className="btn btn-neutral mt-4">
             Login

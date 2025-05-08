@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
 import { useLoaderData, useParams } from "react-router";
+import { AuthContext } from "../AuthProvider/AuthProvider";
+import { Helmet } from "react-helmet-async";
 
 const AppDetails = () => {
+  const { user } = use(AuthContext);
+
   const [appDetails, setAppDetails] = useState([]);
   const [install, setInstall] = useState(true);
   const [userReview, setUserReview] = useState([]);
@@ -34,8 +38,11 @@ const AppDetails = () => {
   const handleReviewSubmit = (e) => {
     e.preventDefault();
     const review = e.target.review.value;
-    setUserReview([...userReview, review]);
+    const rating = e.target.rating.value;
+    const reviewObj = { review, rating };
+    setUserReview([...userReview, reviewObj]);
   };
+  console.log(userReview);
 
   const handleUserState = () => {
     setUserState(true);
@@ -43,6 +50,9 @@ const AppDetails = () => {
 
   return (
     <div className="w-11/12 mx-auto ">
+      <Helmet>
+        <title>Apps Details</title>
+      </Helmet>
       <div
         className="w-full h-[200px] lg:h-[500px] rounded-xl bg-cover bg-center"
         style={{ backgroundImage: `url(${banner})` }}
@@ -72,7 +82,7 @@ const AppDetails = () => {
                 handleInstall(setInstall(!install));
                 handleUserState();
               }}
-              className="btn bg-[#1276F7] text-white rounded-xl"
+              className="btn bg-[#1276F7] text-white "
             >
               {install ? "Install" : "Uninstall"}
             </button>
@@ -96,13 +106,27 @@ const AppDetails = () => {
               <div className="mt-15">
                 <form onSubmit={(e) => handleReviewSubmit(e)}>
                   <textarea
-                    className="textarea disabled "
-                    placeholder="Review"
+                    type="text"
+                    placeholder="Add Your Review"
                     name="review"
+                    className="textarea textarea-info"
                   ></textarea>
                   <br />
+                  <br />
+                  <input
+                    type="number"
+                    name="rating"
+                    className="input validator"
+                    required
+                    placeholder="Rating 1 to 5"
+                    min="1"
+                    max="10"
+                    title="Must be between be 1 to 10"
+                  />
+                  <p className="validator-hint ">Rating 1 to 5</p>
+
                   <button
-                    className="btn mt-8 bg-[#1276F7] text-white rounded-xl"
+                    className="btn mt-8 bg-[#1276F7] text-white "
                     type="submit"
                   >
                     Submit Review
@@ -121,17 +145,32 @@ const AppDetails = () => {
           <p className="text-xl ">Ratings and Reviews</p>
           <div className="p-4">
             <div className="review">
-              {reviews?.map(({ user, rating, comment }, index) => {
+              {userReview?.map((review, index) => {
                 return (
                   <div className="space-y-4" key={index}>
-                    <div className="flex gap-2 items-center">
-                      <img
-                        width="48"
-                        height="48"
-                        src="https://img.icons8.com/color/48/user-male-circle--v1.png"
-                        alt="user-male-circle--v1"
-                      />
-                      <p>{user}</p>
+                    <div className="flex  items-center  gap-4">
+                      {user.photoURL ? (
+                        <img
+                          className="rounded-full"
+                          width="48"
+                          height="48"
+                          src={user.photoURL}
+                          alt="img"
+                        />
+                      ) : (
+                        <img
+                          className="rounded-full"
+                          width="48"
+                          height="48"
+                          src="https://img.icons8.com/color/48/user-male-circle--v1.png"
+                          alt="img"
+                        />
+                      )}
+
+                      <div className="">
+                        <p>{user.displayName}</p>
+                        <p>{review.review}</p>
+                      </div>
                     </div>
                     <div className="flex gap-4">
                       <div className="flex items-center gap-2">
@@ -140,16 +179,15 @@ const AppDetails = () => {
                           <FaStar color="#EFBF04"></FaStar>
                           <FaStar color="#EFBF04"></FaStar>
                         </div>
-                        <p>{rating}</p>
+                        <p>{review.rating}</p>
                       </div>
                       <p className="">April 20, 2025</p>
                     </div>
-                    <p>{comment}</p>
+                    <div className="border border-gray-50 mt-4 mb-4"></div>
                   </div>
                 );
               })}
             </div>
-            <p>{userReview}</p>
           </div>
         </div>
       </div>

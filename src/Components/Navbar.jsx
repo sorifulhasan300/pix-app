@@ -114,7 +114,7 @@ const Navbar = () => {
                     alt="photo"
                   />
                 ) : (
-                  <img src="" alt="" />
+                  <img src="https://img.icons8.com/office/40/user.png" alt="User" />
                 )}
               </div>
             )}
